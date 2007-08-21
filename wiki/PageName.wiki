@@ -1,13 +1,5 @@
 #labels Featured
-#Elicitação
-
-= Introduction =
-
-Atualizações - 20/08/2007
-
-
-= Details =
-
+#Documento de Requisitos - AgroProdutor
 
 Modulo Autenticação e Autorização
 
@@ -259,3 +251,5 @@ Prioridade:
 
 [RF44] – Comprar Grãos
 O sistema possibilitará
+
+Atualizações - 20/08/2007
