@@ -206,7 +206,7 @@ parte do sistema poderá ser implantada mesmo assim.
 ● *Desejável*: requisito que não compromete as funcionalidades básicas do
 sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. São requisitos que podem ser implantados por último, sem comprometer o funcionamento do sistema.
 
--*1.5 Perfis de Usuários pré-definidos*_
+_*1.5 Perfis de Usuários pré-definidos*_
 O sistema virá com 3 perfis pré-definidos:
 
 • *Administrador*: terá acesso a todo o sistema, sem restrições;
@@ -247,7 +247,7 @@ Neste módulo, os usuários devem ter associados o Perfil “Administrativo,
 Operacional ou Cadastro”.
 
 
-_*[RF001] – Autenticar usuário*_
+_*RF001 – Autenticar usuário*_
 
 Para acessar o sistema, o usuário deverá estar autenticado. Este módulo tem como
 entrada o nome do usuário e sua senha. Após a encriptação da senha na maquina local, evitando assim que a senha passe em aberto pela rede, os dados serão validados, permitindo ou não acesso do usuário ao sistema. A saída do modulo consiste no perfil e na lista de permissões associada ao usuário autenticado, ou um erro caso o usuário não esteja autenticado.
@@ -258,7 +258,7 @@ tentativas invalidas, o status do usuário deverá ser automaticamente modificad
 _Prioridade: Essencial_
 
 
-_*[RF002] – Autorizar Usuário*_
+_*RF002 – Autorizar Usuário*_
 
 Para o acesso aos outros módulos do sistema, o usuário, além de estar autenticado,
 deverá estar autorizado. Uma vez que tenha acontecido a autenticação, a tentativa de acesso a qualquer modulo do sistema executará automaticamente o sub-módulo de autorização.
@@ -276,7 +276,7 @@ e a lista de permissões do usuário autenticado. Uma vez que o Administrador do
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo”.
 
 
-_*[RF003] – Cadastrar Usuário*_
+_*RF003 – Cadastrar Usuário*_
 
 O Administrador do sistema poderá cadastrar novos usuários. Para tal, deverão
 exigir as seguintes informações básicas: Nome completo, Login, Senha, Perfil, Status.
@@ -285,7 +285,7 @@ O usuário quando criado, começa com o status como estado “Ativo”.
 _Prioridade: Essencial_
 
 
-_*[RF04] – Cadastrar Perfil*_
+_*RF004 – Cadastrar Perfil*_
 
 O administrador do sistema poderá cadastrar novos perfis. Para tal, deverão exigir as
 seguinte informações básicas: Descrição, Lista de Permissões.
@@ -295,7 +295,7 @@ acessar.
 _Prioridade: Essencial_
 
 
-_*[RF05] – Alterar Status do Usuário*_
+_*RF005 – Alterar Status do Usuário*_
 
 Existem três status que podem ser atribuídos aos usuários:
 
@@ -320,36 +320,40 @@ administrador deve estar devidamente autenticado e autorizado.
 _Prioridade: Importante_
 
 
-_*[RF06] – Alterar Perfil*_
+_*RF006 – Alterar Perfil*_
 
 O Administrador do sistema poderá alterar o Perfil previamente cadastrado, para tal,
-poderá alterar a Descrição do Perfil, a lista de permissões associadas ao Perfil. Para tal poderá
-incluir acessos a mais módulos, bem como restringir a menos módulos.
+poderá alterar a Descrição do Perfil, a lista de permissões associadas ao Perfil. Para tal poderá incluir acessos a mais módulos, bem como restringir a menos módulos.
 O Administrador do sistema, deverá incluir pelo menos um acesso a modulo na lista
 de permissão em questão.
-Prioridade: Importante
-[RF07] – Cadastrar Safra
+
+_Prioridade: Importante_
+
+
+_*[RF07] – Cadastrar Safra*_
+
 O Administrador do sistema poderá cadastrar novas Safras. Para tal, deverão exigir
-as seguintes informações básicas: Descrição e observação.
-Safra, é o termo usado para definir um novo ano de lavoura. Como todos os custos
-são concentrados por safras, dados lançados em uma safra não tem ligação com outras safras. Safra
-se equipara a um ano contábil, porém que, no sudoeste goiano, uma safra nova começa em Agosto e
-tem se termino em Julho do ano seguinte.
-Prioridade: Essencial
-2.3 Modulo Cadastros
+as seguintes informações básicas: Descrição e observação. Safra, é o termo usado para definir um novo ano de lavoura. Como todos os custos são concentrados por safras, dados lançados em uma safra não tem ligação com outras safras. Safra se equipara a um ano contábil, porém que, no sudoeste goiano, uma safra nova começa em Agosto e tem se termino em Julho do ano seguinte.
+
+_Prioridade: Essencial_
+
+
+*2.3 Modulo Cadastros*
 Corresponde ao módulo onde a maioria dos cadastros e manutenções de entidades
-serão realizadas.
-Neste módulo, os usuários devem ter associados o Perfil “Administrativo e
-Operacional, Cadastro”.
-[RF08] – Escolher Safra
+serão realizadas. Neste módulo, os usuários devem ter associados o Perfil “Administrativo e Operacional, Cadastro”.
+
+
+_*RF008 – Escolher Safra*_
+
 Para o acesso aos outros módulos do sistema, o usuário, deve estar autenticado, e
-autorizado. Uma vez que tenha acontecido a autenticação, e a autorização o usuário deve escolher
-em qual safra deve entrar.
+autorizado. Uma vez que tenha acontecido a autenticação, e a autorização o usuário deve escolher em qual safra deve entrar.
 Este sub-módulo tem como entrada uma lista de safras já cadastradas onde apenas
-uma pode ser escolhida e acessada. Caso não exista nenhuma safra cadastrada, o Administrador
-deverá acessar o modulo e cadastrar.
-Prioridade: Essencial
-[RF09] – Cadastrar Talhão
+uma pode ser escolhida e acessada. Caso não exista nenhuma safra cadastrada, o Administrador deverá acessar o modulo e cadastrar.
+
+_Prioridade: Essencial_
+
+
+_*RF009 – Cadastrar Talhão*_
 O usuário do sistema poderá cadastrar novos talhões. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Tamanho Real da área plantada em hectares.
 AgroProdutor – Sistema de Gestão Agropecuária - 10
