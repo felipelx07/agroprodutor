@@ -4,7 +4,7 @@ Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 r
 
 *Escolaridade*
 Uns dos resultados relevantes foi a média de idade, associada a escolaridade dos produtores, conforme tabela abaixo.
-||*_Produtor_*||*_Idade_*||*_Escolaridade_*||
+||_*Produtor*_||*_Idade_*||*_Escolaridade_*||
 ||Produtor01||33 Anos||Superior Completo||
 ||Produtor02||44 Anos||Superior Completo||
 ||Produtor03||42 Anos||Superior Completo||
