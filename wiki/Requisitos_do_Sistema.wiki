@@ -109,57 +109,57 @@
 ||RF068 Cadastrar despesas por Ciclo de Produção||
 ||RF069 Cadastrar despesas por Safra||
 ||2.9 Modulo RH||
-||RF070] Cadastro de Salários||
-||RF071] Pagamento de férias||
-||RF072] Pagamento de Gratificação||
-||RF073] Cadastro de Gratificação||
-||RF074] Lançamento de Débitos Mensais||
-||RF075] Lançamento de créditos Mensais||
+||RF070 Cadastro de Salários||
+||RF071 Pagamento de férias||
+||RF072 Pagamento de Gratificação||
+||RF073 Cadastro de Gratificação||
+||RF074 Lançamento de Débitos Mensais||
+||RF075 Lançamento de créditos Mensais||
 ||3.0 Modulo Relatórios||
-||RF076] Utilização de Insumos por Talhão||
-||RF077] Utilização de Insumos por Ciclo de Produção||
-||RF078] Utilização de Insumos X Custo||
-||RF079] Utilização de Insumos X Quantidade||
-||RF080] Utilização de Maquinas por Talhão||
-||RF081] Utilização de Maquinas por Ciclo de Produção||
-||RF082] Utilização de Maquinas por Custo||
-||RF083] Utilização de Maquinas X Quantidade||
-||RF084] Extrato de Despesas por Talhão||
-||RF085] Extrato de Despesas por Ciclo de Produção||
-||RF086] Extrato de Despesas por Custo||
-||RF087] Extrato de Despesas X Talhão||
-||RF088] Extrato Estoque Grãos||
-||RF089] Extrato de Entrada de Grãos||
-||RF090] Extrato Produtividade||
-||RF091] Extrato Motorista Fretista||
-||RF092] Extrato vendas de Grãos||
-||RF093] Extrato Venda de Maquinas||
-||RF094] Extrato Venda de Insumos||
-||RF095] Extrato saída de Grãos||
-||RF096] Extrato saída Grãos-Diário||
-||RF097] Extrato Manutenção Geral||
-||RF098] Cadastro Manutenção||
-||RF099] Formulário Manutenção Fazenda||
-||RF100] Balanço Geral||
-||RF101] Extrato Contas a Pagar||
-||RF102] Extrato Contas a Receber||
-||RF103] Extrato Bancos||
-||RF104] Extrato Compras Insumos||
-||RF105] Extrato Estoque Insumos||
-||RF106] Extrato empréstimos Insumos||
-||RF107] Extrato Troca Insumos||
-||RF108] Extrato Venda de Insumos||
-||RF109] Demonstrativo Transferência de Insumos||
-||RF110] Demonstrativo Transferência de Grãos||
-||RF111] Extrato Devolução de Insumos||
+||RF076 Utilização de Insumos por Talhão||
+||RF077 Utilização de Insumos por Ciclo de Produção||
+||RF078 Utilização de Insumos X Custo||
+||RF079 Utilização de Insumos X Quantidade||
+||RF080 Utilização de Maquinas por Talhão||
+||RF081 Utilização de Maquinas por Ciclo de Produção||
+||RF082 Utilização de Maquinas por Custo||
+||RF083 Utilização de Maquinas X Quantidade||
+||RF084 Extrato de Despesas por Talhão||
+||RF085 Extrato de Despesas por Ciclo de Produção||
+||RF086 Extrato de Despesas por Custo||
+||RF087 Extrato de Despesas X Talhão||
+||RF088 Extrato Estoque Grãos||
+||RF089 Extrato de Entrada de Grãos||
+||RF090 Extrato Produtividade||
+||RF091 Extrato Motorista Fretista||
+||RF092 Extrato vendas de Grãos||
+||RF093 Extrato Venda de Maquinas||
+||RF094 Extrato Venda de Insumos||
+||RF095 Extrato saída de Grãos||
+||RF096 Extrato saída Grãos-Diário||
+||RF097 Extrato Manutenção Geral||
+||RF098 Cadastro Manutenção||
+||RF099 Formulário Manutenção Fazenda||
+||RF100 Balanço Geral||
+||RF101 Extrato Contas a Pagar||
+||RF102 Extrato Contas a Receber||
+||RF103 Extrato Bancos||
+||RF104 Extrato Compras Insumos||
+||RF105 Extrato Estoque Insumos||
+||RF106 Extrato empréstimos Insumos||
+||RF107 Extrato Troca Insumos||
+||RF108 Extrato Venda de Insumos||
+||RF109 Demonstrativo Transferência de Insumos||
+||RF110 Demonstrativo Transferência de Grãos||
+||RF111 Extrato Devolução de Insumos||
 ||3. Requisitos Não Funcionais||
-||RNF01] Usabilidade||
-||RNF02] Confiabilidade||
-||RNF03] Segurança de Acesso||
-||RNF04] Criptografia||
-||RNF05] Suporte Técnico||
-||RNF06] Ajuda||
-||RNF07] Portabilidade||
+||RNF01 Usabilidade||
+||RNF02 Confiabilidade||
+||RNF03 Segurança de Acesso||
+||RNF04 Criptografia||
+||RNF05 Suporte Técnico||
+||RNF06 Ajuda||
+||RNF07 Portabilidade||
 
 _*1. Introdução_*
 Este documento especifica o sistema AGROPRODUTOR, conforme requisitos iniciais propostos no Documento de Requisitos Iniciais. A solicitação do sistema, bem como a resolução de eventuais dúvidas, é de responsabilidade do cliente GRUPOIVANOFF, denominado apenas de cliente.
@@ -194,13 +194,19 @@ _*1.4 Prioridades dos requisitos*_
 Para estabelecer a prioridade dos requisitos foram adotados as denominações
 “essencial”, “importante” e “desejável”. A prioridade dos requisitos é atualizada no
 gerenciamento do escopo das etapas do projeto e na definição das prioridades durante o desenvolvimento do sistema.
-● *Essencial*: requisito sem o qual o sistema não entra em funcionamento. São
+
+● *Essencial*: 
+requisito sem o qual o sistema não entra em funcionamento. São
 requisitos imprescindíveis, devem ser implementados desde as primeiras implantações do
 sistema;
-● *Importante*: requisito sem o qual o sistema entra em funcionamento, mas de
+
+● *Importante*: 
+requisito sem o qual o sistema entra em funcionamento, mas de
 forma não satisfatória. Devem ser implantados o mais breve possível, mas se não forem,
 parte do sistema poderá ser implantada mesmo assim.
-● *Desejável*: requisito que não compromete as funcionalidades básicas do
+
+● *Desejável*: 
+requisito que não compromete as funcionalidades básicas do
 sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. São requisitos que podem ser implantados por último, sem comprometer o funcionamento do sistema.
 
 -*1.5 Perfis de Usuários pré-definidos*_
