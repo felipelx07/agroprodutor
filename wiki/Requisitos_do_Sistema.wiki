@@ -1,0 +1,1097 @@
+=DOCUMENTOS DE REQUISITOS DE SISTEMA=
+
+===Universidade Federal de Lavras – Pós-Graduação em Software Livre===
+
+                  =AGROPRODUTOR=
+       ===Sistema de Gestão Agropecuária===
+
+
+||Cliente:|| *GRUPO IVANOFF*||
+||Versão:|| 1.00||
+||Data Emissão:|| 17/09/2007||
+||Data Validade:|| 17/11/2007||
+||Responsável:|| *João Paraiba*||
+
+*Histórico de Alterações*
+||Data||Versão||Descrição||Ultimo RF||Ultimo RNF||Autor||
+||01/08/2007|| 1.00|| * Inicio da Documentação|| - || - ||João Paraiba||
+||15/09/2007|| 1.00|| * Formatação do Documento || RF 110 || RNF 07 ||João Paraiba||
+||16/09/2007|| 1.00|| * Reestruturação dos Requisitos || RF 110 || RNF 07 ||João Paraiba||
+||17/09/2007|| 1.00|| * Revisão Geral do Documento || RF 111 || RNF 07 ||João Paraiba||
+||20/09/2007|| 1.00|| * Realocação do [RF003] que passou a ser chamado de [RF008]
+                      * Inserção de Perfis de Usuários prédefinidos
+                      * Substituição do Modulo Operacional para Modulo Cadastros
+                      * Classificação dos Requisitos quanto ao perfil pré=definido || RF 111 || RNF 07 ||João Paraiba||
+
+AgroProdutor – Sistema de Gestão Agropecuária - 2
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+Conteúdo
+1. Introdução 7
+1.1 Propósito 7
+1.2 Escopo 7
+1.3 Definições, acrônimos e abreviações 7
+1.4 Prioridade dos Requisitos 7
+1.5 Perfis de Usuários pré-definidos 8
+2 Requisitos Funcionais 8
+2.1 Modulo de Autenticação e Autorização 8
+[RF001] Autenticar Usuário 9
+[RF002] Autorizar Usuário 9
+2.2 Modulo Administrativo 9
+[RF003] Cadastrar Usuário 9
+[RF004] Cadastrar Perfil 9
+[RF005] Alterar Status do Usuário 9
+[RF006] Alterar Perfil 10
+[RF007] Cadastrar Safra 10
+2.3 Modulo Cadastros 10
+[RF008] Escolher Safra 10
+[RF009] Cadastrar Talhão 10
+[RF010] Cadastrar Centro de Custo 11
+[RF011] Cadastrar Ciclo de Produção 11
+[RF012] Cadastrar Cultura 11
+[RF013] Cadastrar Variedades de Cultura 11
+[RF014] Cadastrar Armazém de Grãos 11
+[RF015] Cadastrar Silo de Armazenagem de Grãos 11
+[RF016] Cadastrar Pessoas 11
+[RF017] Cadastrar Faturados 12
+[RF018] Cadastrar Insumos 12
+[RF019] Cadastrar Unidades – Pesos e Medidas 12
+[RF020] Cadastrar Categoria de Insumos 12
+[RF021] Cadastrar Maquinas 12
+[RF022] Cadastrar Tipo de Maquinas 12
+[RF023] Cadastrar Tabela de Umidade 12
+[RF024] Cadastrar Tipos de Estoque 13
+AgroProdutor – Sistema de Gestão Agropecuária - 3
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF025] Cadastrar Tipos de Atividades 13
+[RF026] Cadastrar Motoristas Fretistas 13
+[RF027] Cadastrar Caminhões Fretistas 13
+[RF028] Cadastrar Rotas de Frete 13
+[RF029] Cadastrar Bancos e Caixas 13
+[RF030] Cadastrar Moeda 13
+[RF031] Cadastrar Despesas 14
+[RF032] Cadastrar Receitas 14
+[RF033] Cadastrar Portador 14
+[RF034] Associar Variedade á Talhão 14
+2.4 Modulo Financeiro 14
+[RF035] Lançamento de contas a pagar 14
+[RF036] Lançamento de contas a receber 14
+[RF037] Pagamento de Contas a Pagar 15
+[RF038] Recebimento de Contas a Receber. 15
+[RF039] Lançamentos de Débitos Bancários 15
+[RF040] Lançamentos de créditos Bancários 15
+[RF041] Efetuar conciliação bancaria 15
+2.5 Modulo Grãos 15
+[RF042] Entrada de Grãos pela Colheita 15
+[RF043] Entrada de Grãos por Empréstimos 16
+[RF044] Comprar Grãos 16
+[RF045] Venda de Grãos 16
+[RF046] Saída de Grãos por Venda 16
+[RF047] Saída de Grãos por Empréstimos 16
+[RF048] Saída de Grãos para pagamentos 16
+[RF049] Entrada de Grãos por recebimento 16
+[RF050] Transferência de Grãos entre Armazém 17
+2.6 Modulo Insumos 17
+[RF051] Compra de Insumos 17
+[RF052] Entrada de Insumos por empréstimos 17
+[RF053] Troca de Insumos 17
+[RF054] Saída de Insumos para Lavoura 17
+[RF055] Saída de Insumos por empréstimos 18
+[RF056] Venda de Insumos 18
+[RF057] Devolução de Insumos Comprados 18
+[RF058] Transferência de Insumo entre Estoques 18
+AgroProdutor – Sistema de Gestão Agropecuária - 4
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF059] Transferência de Insumos entre Safra 18
+2.7 Modulo Frota 18
+[RF060] Cadastrar horas maquinas trabalhadas 18
+[RF061] Cadastrar Manutenção Periódica 18
+[RF062] Efetuar Manutenção Periódica 19
+[RF063] Abastecimento da Frota 19
+[RF064] Associar Itens de Manutenção com Maquinas 19
+[RF065] Efetuar Manutenção Complementar 19
+2.8 Modulo Despesas 19
+[RF066] Cadastrar despesas por Variedade de cultura 19
+[RF067] Cadastrar despesas por Talhão 19
+[RF068] Cadastrar despesas por Ciclo de Produção 20
+[RF069] Cadastrar despesas por Safra 20
+2.9 Modulo RH 20
+[RF070] Cadastro de Salários 20
+[RF071] Pagamento de férias 20
+[RF072] Pagamento de Gratificação 20
+[RF073] Cadastro de Gratificação 20
+[RF074] Lançamento de Débitos Mensais 20
+[RF075] Lançamento de créditos Mensais 21
+3.0 Modulo Relatórios 21
+[RF076] Utilização de Insumos por Talhão 21
+[RF077] Utilização de Insumos por Ciclo de Produção 21
+[RF078] Utilização de Insumos X Custo 21
+[RF079] Utilização de Insumos X Quantidade 21
+[RF080] Utilização de Maquinas por Talhão 21
+[RF081] Utilização de Maquinas por Ciclo de Produção 22
+[RF082] Utilização de Maquinas por Custo 22
+[RF083] Utilização de Maquinas X Quantidade 22
+[RF084] Extrato de Despesas por Talhão 22
+[RF085] Extrato de Despesas por Ciclo de Produção 22
+[RF086] Extrato de Despesas por Custo 22
+[RF087] Extrato de Despesas X Talhão 22
+[RF088] Extrato Estoque Grãos 22
+[RF089] Extrato de Entrada de Grãos 23
+[RF090] Extrato Produtividade 23
+[RF091] Extrato Motorista Fretista 23
+AgroProdutor – Sistema de Gestão Agropecuária - 5
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF092] Extrato vendas de Grãos 23
+[RF093] Extrato Venda de Maquinas 23
+[RF094] Extrato Venda de Insumos 23
+[RF095] Extrato saída de Grãos 23
+[RF096] Extrato saída Grãos-Diário 24
+[RF097] Extrato Manutenção Geral 24
+[RF098] Cadastro Manutenção 24
+[RF099] Formulário Manutenção Fazenda 24
+[RF100] Balanço Geral 23
+[RF101] Extrato Contas a Pagar 24
+[RF102] Extrato Contas a Receber 24
+[RF103] Extrato Bancos 25
+[RF104] Extrato Compras Insumos 25
+[RF105] Extrato Estoque Insumos 25
+[RF106] Extrato empréstimos Insumos 25
+[RF107] Extrato Troca Insumos 25
+[RF108] Extrato Venda de Insumos 25
+[RF109] Demonstrativo Transferência de Insumos 26
+[RF110] Demonstrativo Transferência de Grãos 26
+[RF111] Extrato Devolução de Insumos 26
+3. Requisitos Não Funcionais 26
+[RNF01] Usabilidade 26
+[RNF02] Confiabilidade 26
+[RNF03] Segurança de Acesso 26
+[RNF04] Criptografia 26
+[RNF05] Suporte Técnico 26
+[RNF06] Ajuda 27
+[RNF07] Portabilidade 27
+AgroProdutor – Sistema de Gestão Agropecuária - 6
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+1. Introdução
+Este documento especifica o sistema AGROPRODUTOR, conforme requisitos
+iniciais propostos no Documento de Requisitos Iniciais. A solicitação do sistema, bem como a
+resolução de eventuais dúvidas, é de responsabilidade do cliente GRUPOIVANOFF, denominado
+apenas de cliente.
+1.1 Propósito
+Esta seção tem como intuito delinear os propósitos do documento de especificação
+de requisitos de software, bem como, especificar o público-alvo ao qual foi destinado.
+O documento tem como propósito servir de base para um acordo entre cliente e
+equipe de desenvolvimento, no sentido de especificar as funcionalidades, além das características de
+alto nível que devem ser providas pelo mesmo.
+1.2 Escopo
+Esta seção tem como objetivo a identificação por nome do produto de software a ser
+desenvolvido, definição do escopo do produto (limitando o que o produto deverá fazer) e descrição
+da aplicação do produto sendo especificado seus beneficios, propósitos e objetivos.
+AgroProdutor, ou Sistema de Gestão Administrativa, Operacional e Financeira para
+Produtores Rurais, foi o nome atribuído ao produto de software que será desenvolvido. O escopo
+desejado para o sistema está representado pelo Documento de Requisitos Iniciais apresentados pelo
+cliente. As dúvidas que surgiram e foram sanadas no decorrer do desenvolvimento deste documento
+de requisitos, bem como a adição de novas funcionalidades, aconteceram por meio de reuniões,
+virtuais e física com o cliente, telefone e emails.
+1.3 Definições, acrônimos e abreviações
+AgroProdutor Sistema de Gestão Administrativa, Operacional e Financeira para
+Produtores Rurais
+Talhão Parte de uma área de terra, geralmente delimitada por estrada, cerca, rio,..
+Variedade Variedade de cultura que será plantada. Ie. CD219 (variedade de Semente
+de Soja)
+Ciclo de Produção É formado por um ou mais talhões plantados de uma mesma cultura. No
+nome também leva o tipo de Safra, (safra de verão, ou safrinha) Ie. Soja
+Safra 2007/2008 – Milho Safrinha 2008/2008.
+Safra Semelhante ao ano contábil de um contador, porém o ano do produtores
+do sudoeste goiano, iniciam em Agosto de terminam em Julho do ano
+seguinte. Neste período, os produtores tem duas colheitas, chamadas de
+Safra de Verão e Safrinha.
+Safra de Verão É o período de plantio e colheita, que se inicia em agosto e termina com a
+colheita, geralmente no final de maio do ano corrente. É chamada apenas
+“safra”.
+Safrinha É o período de plantio e colheita, que se inicia inicio de Fevereiro e
+termina com a colheita, geralmente no final de julho do ano corrente.
+1.4 Prioridades dos requisitos
+Para estabelecer a prioridade dos requisitos foram adotados as denominações
+“essencial”, “importante” e “desejável”. A prioridade dos requisitos é atualizada no gerenciamento
+do escopo das etapas do projeto e na definição das prioridades durante o desenvolvimento do
+AgroProdutor – Sistema de Gestão Agropecuária - 7
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+sistema.
+● Essencial: requisito sem o qual o sistema não entra em funcionamento. São
+requisitos imprescindíveis, devem ser implementados desde as primeiras implantações do
+sistema;
+● Importante: requisito sem o qual o sistema entra em funcionamento, mas de
+forma não satisfatória. Devem ser implantados o mais breve possível, mas se não forem,
+parte do sistema poderá ser implantada mesmo assim.
+● Desejável: requisito que não compromete as funcionalidades básicas do
+sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. São requisitos que
+podem ser implantados por último, sem comprometer o funcionamento do sistema.
+1.5 Perfis de Usuários pré-definidos
+O sistema virá com 3 perfis pré-definidos:
+• Administrador: terá acesso a todo o sistema, sem restrições;
+• Operacional: terá acesso ao todos os módulos, exceto o Módulo Administrativo;
+• Cadastro : terá acesso apenas ao Módulo de Cadastros;
+2. Requisitos Funcionais
+Este capitulo visa fornecer uma descrição detalhada dos requisitos, incluindo
+detalhes sobre valores de entrada (estímulos) ao sistema, valores de Saída (respostas) do sistema, e
+todas as funções executadas pelo sistema, em resposta a alguma entrada, ou em suporte a uma
+Saída.
+Os requisitos funcionais do sistema serão apresentados de acordo com o módulo em
+que se enquadram, por meio de uma narrativa de processamento. As dependências entre módulos,
+pré-condições, pós-condições, bem como a prioridade desejada de cada módulo ou sub-módulo,
+também serão explicitadas.
+2.1 Modulo Autenticação e Autorização
+Ó Modulo Autenticação e Autorização corresponde a um ponto único de entrada
+para o sistema e conseqüentemente para os outros módulos.
+O modulo recebe como entrada o nome do usuário do sistema e a senha
+correspondente. Antes de enviar a senha, seu valor é encriptado. O modulo então, verifica se o
+usuário já esta cadastrado, e se sua senha confere com o valor recebido. Em caso afirmativo, o
+retorno consiste no perfil e na lista de permissões relacionadas ao usuário em questão. Tal lista
+deverá ser utilizada pelos outros módulos, a fim de verificar se o usuário possui permissão de
+acesso a determinada parte do sistema.
+Este módulo possui quatro entidades básicas:
+● Usuário: corresponde a quem terá acesso ao sistema;
+● Perfil: corresponde a função do usuário no sistema;
+● Permissão: corresponde a cada uma das possíveis tarefas do sistema;
+● Status: corresponde ao estado atual do usuário.
+Como requisito inicial do sistema, um usuário padrão deve ser cadastrado. O sistema
+cadastrará automaticamente o usuário ADMIN, com senha ADM654321 com todos o livre acesso
+aos módulos e tarefas do sistema.
+Os Perfis correspondem a cada uma das possíveis funções dos usuários do sistema.
+Cada perfil tem uma lista de permissões que podem ser alteradas conforme for a necessidade. Cada
+usuário pode ter associado a ele, apenas um Perfil.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo,
+Operacional ou Cadastro”.
+AgroProdutor – Sistema de Gestão Agropecuária - 8
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF01] – Autenticar usuário
+Para acessar o sistema, o usuário deverá estar autenticado. Este módulo tem como
+entrada o nome do usuário e sua senha. Após a encriptação da senha na maquina local, evitando
+assim que a senha passe em aberto pela rede, os dados serão validados, permitindo ou não acesso do
+usuário ao sistema. A saída do modulo consiste no perfil e na lista de permissões associada ao
+usuário autenticado, ou um erro caso o usuário não esteja autenticado.
+As tentativas de autenticação deverão ser limitadas a três. Caso ocorram mais de três
+tentativas invalidas, o status do usuário deverá ser automaticamente modificado para bloqueado,
+impedindo assim seu futuro acesso ao sistema. Somente o Administrador poderá alterar o status do
+usuário, permitindo novamente o acesso ao sistema.
+Prioridade: Essencial
+[ R F02] – Autorizar Usuário
+Para o acesso aos outros módulos do sistema, o usuário, além de estar autenticado,
+deverá estar autorizado. Uma vez que tenha acontecido a autenticação, a tentativa de acesso a
+qualquer modulo do sistema executará automaticamente o sub-módulo de autorização.
+Este sub-módulo tem como entrada a lista de permissões correspondente ao perfil do
+usuário obtida na autenticação. O sistema verifica se o módulo ao qual o usuário deseja acesso está
+relacionado ao perfil e ás permissões associadas. O sub-modulo, retorna se o usuário tem permissão
+ou não de acessar o modulo em questão.
+Prioridade: Essencial
+2.2 Módulo Administrativo
+Através do Modulo Administrativo, será possível o cadastro de novos usuários,
+estabelecimento de perfis e lista de permissões, cadastro e manutenção de entidades, bem como a
+execução de qualquer tarefa possibilitada pelo sistema.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil
+e a lista de permissões do usuário autenticado. Uma vez que o Administrador do sistema esteja
+devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos de administração é
+liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo”.
+[RF03] – Cadastrar Usuário
+O Administrador do sistema poderá cadastrar novos usuários. Para tal, deverão
+exigir as seguintes informações básicas: Nome completo, Login, Senha, Perfil, Status.
+O usuário quando criado, começa com o status como estado “Ativo”.
+Prioridade: Essencial
+[RF04] – Cadastrar Perfil
+O administrador do sistema poderá cadastrar novos perfis. Para tal, deverão exigir as
+seguinte informações básicas: Descrição, Lista de Permissões.
+Entende-se por “Lista de Permissões”, os possíveis módulos que o usuário poderá
+acessar.
+Prioridade: Essencial
+[RF05] – Alterar Status do Usuário
+Existem três status que podem ser atribuídos aos usuários:
+AgroProdutor – Sistema de Gestão Agropecuária - 9
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+● Ativo
+● Bloqueado
+● Inativo
+Enquanto o usuário estiver com o status “Bloqueado” ou “Inativo”, não poderá
+acessar o sistema.
+O Status “Inativo”, somente será usado quando o usuário for desligado da empresa,
+ou seja, a probabilidade de voltar a acessar o sistema é perto de nula.
+O Status “Bloqueado”, ocorrerá por duas ocasiões: O sistema deverá
+automaticamente trocar o status do usuário para “Bloqueado”, com três tentativas de autenticação
+invalidas sucessivas, ou quando o administrador, restringir o acesso ao sistema, por determinado
+tempo.
+O sub-modulo permite ao administrador alterar o status do usuário. Para acessá-lo, o
+administrador deve estar devidamente autenticado e autorizado.
+Prioridade: Importante
+[RF06] – Alterar Perfil
+O Administrador do sistema poderá alterar o Perfil previamente cadastrado, para tal,
+poderá alterar a Descrição do Perfil, a lista de permissões associadas ao Perfil. Para tal poderá
+incluir acessos a mais módulos, bem como restringir a menos módulos.
+O Administrador do sistema, deverá incluir pelo menos um acesso a modulo na lista
+de permissão em questão.
+Prioridade: Importante
+[RF07] – Cadastrar Safra
+O Administrador do sistema poderá cadastrar novas Safras. Para tal, deverão exigir
+as seguintes informações básicas: Descrição e observação.
+Safra, é o termo usado para definir um novo ano de lavoura. Como todos os custos
+são concentrados por safras, dados lançados em uma safra não tem ligação com outras safras. Safra
+se equipara a um ano contábil, porém que, no sudoeste goiano, uma safra nova começa em Agosto e
+tem se termino em Julho do ano seguinte.
+Prioridade: Essencial
+2.3 Modulo Cadastros
+Corresponde ao módulo onde a maioria dos cadastros e manutenções de entidades
+serão realizadas.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo e
+Operacional, Cadastro”.
+[RF08] – Escolher Safra
+Para o acesso aos outros módulos do sistema, o usuário, deve estar autenticado, e
+autorizado. Uma vez que tenha acontecido a autenticação, e a autorização o usuário deve escolher
+em qual safra deve entrar.
+Este sub-módulo tem como entrada uma lista de safras já cadastradas onde apenas
+uma pode ser escolhida e acessada. Caso não exista nenhuma safra cadastrada, o Administrador
+deverá acessar o modulo e cadastrar.
+Prioridade: Essencial
+[RF09] – Cadastrar Talhão
+O usuário do sistema poderá cadastrar novos talhões. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, Tamanho Real da área plantada em hectares.
+AgroProdutor – Sistema de Gestão Agropecuária - 10
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+Os produtores costumam dividir as lavouras em vários pedaços de áreas, as vezes
+divididos por uma estrada, cerca ou mesmo pertencendo a outra matricula. Estas divisões são
+chamados de talhões.
+Cada talhão tem um tamanho de área, mas nada impede de o produtor plantar menos
+área do que no cadastro.
+Prioridade: Importante
+[RF10] – Cadastrar Centro de Custo
+O usuário do sistema poderá cadastrar novos Centros de Custo. Para tal, deverão
+exigir as seguintes informações básicas: Descrição e observação.
+Centro de custo, são aglomerações de talhões, localizados próximos fisicamente.
+Prioridade: Importante
+[RF11] – Cadastrar Ciclo de Produção
+O usuário do sistema poderá cadastrar novos Ciclo de Produção. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Safra, Cultura, Tamanho da área, Observação.
+Ciclo de Produção, são as culturas plantadas durante a safra, por exemplo, “Soja
+Safra 2007/2008”, que é um ciclo de produção da Cultura de Soja, da Safra 2007/2008.
+Prioridade: Importante
+[RF12] – Cadastrar Cultura
+O usuário do sistema poderá cadastrar novas culturas: Para tal, deverão exigir as
+seguintes informações básicas: Descrição e observação.
+Cultura é o termo usado para determinar que tipo de grão será plantado, como por
+exemplo, Soja, Milho, Girassol, ...
+Prioridade: Importante
+[RF13] – Cadastrar Variedades de Cultura
+O usuário do sistema poderá cadastrar novas variedades de cultura. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Cultura, Observação e Status.
+Variedade é o termo usado para o produtor poder fazer analises de custo de
+produtividade entre vários tipos de cultura que existem no mercado, com por exemplo, para a
+Cultura de Soja, temos a variedade Msoy, Valiosa, Anta, 7002, ...
+Prioridade: Importante
+[RF14] – Cadastrar Armazém de Grãos
+O usuário do sistema poderá cadastrar novos armazéns. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, Observação e Status..
+Armazém é o termo utilizado para determinar onde o grão, após colhido será
+armazenado. Existem armazéns, próprios e de terceiros. Ambos são cadastrados nestes sub-modulo.
+Prioridade: Importante
+[RF15] – Cadastrar Silo de Armazenagem de Grãos
+O usuário do sistema poderá cadastrar novos silos de armazenagem. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Observação e Status.
+Silo de Armazenagem são os locais propriamente onde os grão serão armazenados.
+Um Armazém, pode ter um ou mais silos. Cada silo tem uma capacidade. Assim o produtor tem um
+maior controle onde esta o seu grãos.
+Prioridade: Importante
+[RF16] – Cadastrar Pessoas
+O usuário do sistema poderá cadastrar novas pessoas. Para tal, deverão exigir as
+AgroProdutor – Sistema de Gestão Agropecuária - 11
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
+Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro, Cidade, Estado, CEP),
+Telefone(Tipo,DDD,Numero), status.
+Pessoas é o termo utilizado para o cadastro de fornecedores e clientes, que deverão
+ser utilizados no sistema.
+Prioridade: Importante
+[RF17] – Cadastrar Faturados
+O usuário do sistema poderá cadastrar novos faturados. Para tal, deverão exigir as
+seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
+Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro, Cidade, Estado, CEP),
+Telefone(Tipo, DDD, Numero), status.
+Faturado é o termo utilizado para emissão de notas fiscais, nas eventuais compras de
+insumos, compras de peças,...
+Prioridade: Importante
+[RF18] – Cadastrar Insumos
+O usuário do sistema poderá cadastrar novos Insumos. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, TipoInsumo, Categoria, Unidade de Medida, Estoque
+Minimo, Observação, ValorMedio(Valor,Safra)e status.
+O tipo de insumo é dado de 6 formas: Defensivos, Sementes, Fertilizantes, Peças,
+Óleos e Filtros.
+Prioridade: Importante
+[RF19] – Cadastrar Unidades – Pesos e Medidas
+O usuário do sistema poderá cadastrar novas unidades. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, Observação, Status.
+Unidades é o termo utilizado para definir em que medida um insumo vai ser
+utilizado, como por exemplo, em kilos, gramas, doses, toneladas, litros,...
+Prioridade: Importante
+[RF20] – Cadastrar Categoria de Insumos
+O usuário do sistema poderá cadastrar novas categorias. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, Observação, Status.
+Categoria de Insumos é o termo utilizado para classificar o insumo, como por
+exemplo, Defensivos são classificados em: Herbicidas, Fungicidas, Inseticidas, ...
+Prioridade: importante
+[RF21] – Cadastrar Maquinas
+O usuário do sistema poderá cadastrar novas maquinas. Para tal, deverão exigir as
+seguintes: Numero, Descrição, TipoMaquina, AnoFabricação, ValorMercado, ValorSucata,
+HorasUteis, AnoCompra, Horimetro/Kilometro Atual, observação, Status.
+Prioridade: importante
+[RF22] – Cadastrar Tipo de Maquinas
+O usuário do sistema poderá cadastrar novos tipos de maquinas. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, TipoMarcação, Observação, Status.
+Existe dois tipos de marcação: Horimetro e Kilometrico.
+Prioridade: importante
+[RF23] – Cadastrar Tabela de Umidade
+O usuário do sistema poderá cadastrar novas tabelas de umidades. Para tal, deverão
+AgroProdutor – Sistema de Gestão Agropecuária - 12
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+exigir as seguintes informações básicas: Descrição, Cultura, Dados(Índice, txDesconto), Status.
+Existem vários tipos de Tabela de Umidade. Cada armazém de terceiro, utiliza a sua
+com índices próprios que podem variar de tabela para tabela.
+Prioridade: importante
+[RF24] – Cadastrar Tipos de Estoque
+O usuário do sistema poderá cadastrar novos tipos de estoques. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Observação, Status.
+Tipo de estoque, é o temo utilizado para definir vários estoques.
+Prioridade: importante
+[RF25] – Cadastrar Tipos de Atividades
+O usuário do sistema poderá cadastrar novos tipos de atividades. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Observação, Status.
+Tipo de Atividades é a classificação do serviço realizado na lavoura, como por
+exemplo, Plantio, Colheita, Aplicação, Dessecação, ...
+Prioridade: Importante
+[RF26] – Cadastrar Motoristas Fretistas
+O usuário do sistema poderá cadastrar novos motoristas fretistas. Para tal, deverão
+exigir as seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
+Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro,. Cidade, Estado, CEP),
+Telefone(Tipo, DDD, Numero), status.
+Motorista Fretista é o termo utilizado para os motorista que transportam os grãos,
+seja da lavoura para armazém, seja de armazém para armazém.
+Prioridade: Importante
+[RF27] – Cadastrar Caminhões Fretistas
+O usuário do sistema poderá cadastrar novos caminhões fretistas. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Placa, MotoristaFretista, Status.
+Caminhão Fretista é o termo utilizado para os caminhões que transportam os grãos,
+seja da lavoura para armazém, seja de armazém para armazém.
+Prioridade: Importante
+[RF28] – Cadastrar Rotas de Frete
+O usuário do sistema poderá cadastrar novas rota de frete. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, TipoCobrança, ValorUnitario, Status.
+Rotas de frete, define o valor e como o frete será pago, seja ele por saca, por kilo,
+por viagem ou por kilometro rodado.
+Prioridade: Importante
+[RF29] – Cadastrar Bancos e Caixas
+O usuário do sistema poderá cadastrar novos bancos ou caixas. Para tal, deverão
+exigir as seguintes informações básicas: Descrição, Obervação, Status.
+Prioridade: Importante
+[RF30] – Cadastrar Moeda
+O usuário do sistema poderá cadastrar novas moedas. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, Sifrão, Observação, Status.
+Prioridade: Importante
+AgroProdutor – Sistema de Gestão Agropecuária - 13
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF31] – Cadastrar Despesas
+O usuário do sistema poderá cadastrar novas despesas. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, observação, Status.
+Prioridade: Importante
+[RF32] – Cadastrar Receitas
+O usuário do sistema poderá cadastrar novas receitas. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, observação, Status.
+Prioridade: Importante
+[RF33] – Cadastrar Portador
+O usuário do sistema poderá cadastrar novos portadores. Para tal, deverão exigir as
+seguintes informações básicas: Descrição, observação, status.
+Portador é o termo utilizado para classificar o documento que será lançado no
+financeiro. Portador pode ser, Nota Fiscal, Pedido, ...
+Prioridade: importante
+[RF34] – Associar Variedade á Talhão
+O usuário deverá associar uma variedade, a um talhão, e a um ciclo de produção. No
+momento da associação, deverá ser informado a quantidade de hectares que será utilizada para esta
+variedade. Um talhão pode ser sub-dividido em varias variedades, e/ou vários ciclos de produção.
+Prioridade: Importante
+2.4 Módulo Financeiro
+Através do Modulo Financeiro, será possível o lançamento de contas a pagar, contas
+a receber, pagamento de contas, recebimento de contas, empréstimos, transferência entre bancos,
+enfim, toda a movimentação financeira do produtor rural.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
+autenticado e autorizado, o acesso a cada um dos sub-módulos do financeiro é liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF35] – Lançamento de contas a pagar
+O sistema possibilita o lançamento de contas a pagar pelo usuário.
+Deverá ser possível em apenas um lançamento, varias parcelas, de diferentes
+valores, e data de vencimentos.
+Também será possível escolher o tipo de correção, Simples ou Capitalizada, e
+também demais correções, do tipo, mora, multa,...
+Pode ser lançada uma conta com qualquer moeda já cadastrada.
+Prioridade: Importante
+[RF36] - Lançamento de contas a receber
+O sistema possibilita o lançamento de contas a receber pelo usuário.
+Deverá ser possível em apenas um lançamento, varias parcelas, de diferentes
+valores, e data de vencimentos.
+Também será possível escolher o tipo de correção, Simples ou Capitalizada, e
+também demais correções, do tipo, mora, multa,...
+Pode ser lançada uma conta com qualquer moeda já cadastrada.
+Prioridade: Importante
+AgroProdutor – Sistema de Gestão Agropecuária - 14
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF37] – Pagamento de Contas a Pagar
+O sistema possibilitará o pagamento de contas a pagar que não foram quitadas.
+Possibilitará vários pagamentos de uma mesma parcela, ou agrupar varias parcelas de diferentes
+fornecedores em um só pagamento.
+Pode ser efetuado pagamento, em varias moedas, mas para lançamentos de Bancos,
+deverá ser feito a correção
+Prioridade: Importante
+[RF38] – Recebimento de Contas a Receber.
+O sistema possibilitará o recebimento de contas a receber que não foram quitadas.
+Possibilitará vários recebimentos de uma mesma parcela, ou agregar varias parcelas de diferentes
+clientes em um só recebimento.
+Pode ser efetuado recebimento, em varias moedas, mas para os lançamentos em
+Bancos, deverá ser feito a correção.
+Prioridade: Importante
+[RF39] – Lançamentos de Débitos Bancários
+O sistema possibilitará o lançamentos de débitos, do tipo: taxas bancarias, CPMF e
+IOF.
+Assim o sistema permitirá ao usuário um controle mais eficaz de sua conta corrente.
+Prioridade: Importante
+[RF40] – Lançamentos de créditos Bancários
+O sistema possibilitará o lançamentos de créditos, do tipo: resgate de previdência, de
+títulos, ou estorno.
+Assim o sistema permitirá ao usuário um controle mais eficaz de sua conta corrente.
+Prioridade: Importante
+[RF41] – Efetuar conciliação bancaria
+O controle do saldo bancário de uma conta corrente, será emitido por esta função.
+Todos os lançamentos, seja a credito ou a debito, que já estiverem lançados no extrato bancário
+emitido pela agencia, deverá ser informado ao sistema, possibilitando assim, saber quais
+lançamentos ainda estão pendentes.
+Nesta função o usuário saberá por exemplo, quais cheques emitidos já foram
+descontados no banco e quais ainda não foram apresentados.
+Prioridade: Importante
+2.5 Módulo Grãos
+Através do Modulo Grãos, será possível a entrada, venda, empréstimos de grãos,
+enfim, toda a movimentação que utiliza o estoque de grãos.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
+autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF42] – Entrada de Grãos pela Colheita
+O sistema possibilitará a entrada de grãos, oriundos da colheita. Neste sub-módulo
+será descontados possíveis impurezas, do tipo, umidade, ardidos, ... Para tal, deverão exigir as
+seguintes informações básicas: numero do talhão, ciclo de produção, variedade, safra, cultura, peso
+AgroProdutor – Sistema de Gestão Agropecuária - 15
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+bruto e peso liquido.
+Para cada percentual de umidade, deve seguir a tabela de umidade previamente
+cadastrada.
+È por este sub-módulo que será avaliada a produtividade da colheita.
+Prioridade: Importante
+RF43] – Entrada de Grãos por Empréstimos
+O sistema possibilitará a entrada de grãos por empréstimos de terceiros, previamente
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, Peso
+Bruto e Peso Liquido.
+A entrada de grãos por empréstimos não afetará a produtividade.
+Prioridade: Importante
+[RF44] – Comprar Grãos
+O sistema possibilitará a entrada de grãos por compra de terceiros, previamente
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, peso
+bruto e peso liquido.
+A entrada de grãos por compra não afetará a produtividade.
+Prioridade: Importante
+[RF45] – Venda de Grãos
+O usuário efetuará a venda de grãos, que se caracteriza quando o produtor decide
+vender seu estoque.. Para vender uma certa quantidade de grãos, não é necessário ter a quantidade
+no estoque. Existem vendas feitas antes mesmo de colher o grão, chamada de venda e entrega
+futura.
+Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, valor
+unitário, valor total.
+Prioridade: Importante
+[RF46] – Saída de Grãos por Venda
+O usuário efetuará a saída de grãos por venda, que se caracteriza pela entrega do
+produto físico. Para fazer a entrega do grãos é necessário ter efetuado a venda de grãos. È
+necessário ter a quantidade no estoque para poder fazer a saída do grão.
+Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade,
+VendadeGraos.
+Prioridade: Importante
+[RF47] – Saída de Grãos por Empréstimos
+O usuário efetuará a saída de grãos por empréstimos a terceiros, previamente
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, peso
+bruto e peso liquido.
+Para consolidar o empréstimo é necessário ter a quantidade do grão no estoque.
+Prioridade: Importante
+[RF48] – Saída de Grãos para pagamentos
+O usuário efetuará a saída de grãos para pagamentos de documentos previamente
+cadastrados no sub-Modulo Contas a Pagar. Para tal, deverão exigir as seguintes informações
+básicas: Cultura, Quantidade de grão, valorpago, CodigoContasAPagar.
+Para efetuar esta operação, é necessário consultar o saldo do estoque.
+Prioridade: Importante
+[RF49] – Entrada de Grãos por recebimento
+AgroProdutor – Sistema de Gestão Agropecuária - 16
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+O usuário efetuará a entrada de grãos por recebimento de documentos previamente
+cadastrados no sub-modulo Contas a Receber. Para tal, deverão exigir as seguintes informações
+básicas: Cultura, quantidade de grãos, valorrecebido, CodigoContasAReceber.
+Após efetuar esta operação, o saldo do estoque de grãos será atualizado.
+Prioridade: Importante
+[RF50] – Transferência de Grãos entre Armazém
+O usuário efetuará a transferência de grãos entre armazéns previamente cadastrados.
+No armazém de saída dos grãos deverá ser consultado o estoque. Após a efetivação da
+transferência, o saldo do estoque de grãos deverá ser atualizado.
+Prioridade: Importante
+2.6 Módulo Insumos
+Através do Modulo Insumos, será possível a entrada, venda, empréstimos de
+sementes, fertilizantes,. defensivos, enfim, toda a movimentação que utiliza o estoque de insumos.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
+autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF51] – Compra de Insumos
+O usuário efetuará a compra de insumos através de pedido ou nota fiscal. Para tal,
+deverão exigir as seguintes informações básicas: Insumo, quantidade, valorunitario, valortotal,
+estoque, npedido.
+O usuário deverá saber, em qual unidade de medida o insumo será utilizado, com
+por exemplo: litro, dose, kilo,...
+Prioridade: Importante
+[ RF52] – Entrada de Insumos por e mpréstimos
+O usuário efetuará a entrada de insumos por empréstimos para terceiros,
+previamente cadastrado. Para tal, deverão exigir as seguintes informações básicas: Insumo,
+quantidade, produtor, estoque.
+Após a efetivação do empréstimo, o estoque de insumos será atualizado.
+Prioridade: Importante
+[RF53] – Troca de Insumos
+O usuário efetuará a troca de insumos, ou seja, um produto ira sair do estoque e
+outro ira entrar no estoque. Para tal, deverão exigir as seguintes informações básicas:
+InsumoEntrada, QuantidadeEntrada, InsumoSaida, QuantidadeSaida, estoque.
+O insumoEntrada irá entrar no estoque, e o insumoSaida irá sair. A efetivação da
+troca, se dará após consulta do insumoSaida no estoque.
+.Prioridade: Importante
+[RF54] – Saída de Insumos para Lavoura
+O usuário efetuará a saída de insumos para a lavoura, ou seja, haverá uma aplicação
+de insumos na lavoura. Para tal, deverão exigir as seguintes informações básicas: Insumo,
+quantidade, NumeroTalhão, CicloProdução.
+Prioridade: Importante
+AgroProdutor – Sistema de Gestão Agropecuária - 17
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[ RF55] – Saída de Insumos por e mpréstimos
+O usuário efetuará a saída de insumos por empréstimos para terceiros, previamente
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: insumo, quantidade, produtor,
+estoque.
+A efetivação da função se dará após, consulta do estoque.
+Prioridade: Importante
+[RF56] – Venda de Insumos
+O usuário efetuará a venda de insumos para terceiros, previamente cadastrados. Para
+tal, deverão exigir as seguintes informações básicas: insumo, quantidade, valorunitario, valortotal.
+Prioridade: Importante
+[RF57] – Devolução de Insumos Comprados
+O usuário efetuará a devolução de insumos ao fornecedor. Para tal, deverão exigir as
+seguintes informações básicas: fornecedor, insumo, quantidade, npedido.
+Para efetivação desta função, o estoque deverá ser consultado e o preço unitário, será
+buscado automaticamente através do npedido, no sub-modulo Compras de Insumos.
+Prioridade: Importante
+[RF58] – Transferência de Insumo entre Estoques
+O usuário efetuará a transferência de insumos entre estoques. Para tal, deverão exigir
+as seguintes informações básicas: insumo, quantidade, estoqueOrigem, estoqueDestino.
+Para efetivação desta função, o estoqueOrigem, deverá ser consultado.
+Prioridade: Importante
+[RF59] – Transferência de Insumos entre Safra
+O usuário efetuará a transferência de insumos entre safra. Esta função será
+necessário quando restar insumos no estoque e começar uma nova safra. Com esta função, o
+estoque da safra anterior e zerado e a quantidades e valores unitários passam para a safra atual. Para
+tal, deverão exigir as seguintes informações básicas: insumos, quantidade, safraAnterior.
+Para efetivação desta função, o usuário deverá estar autenticado na safra Nova.
+Prioridade: Importante
+2.7 Modulo Frota
+Através do Modulo Frotas, será possível a entrada, venda maquinas e implementos
+agrícolas.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
+autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF60] – Cadastrar horas maquinas trabalhadas
+O usuário cadastrará as horas trabalhadas da maquinas, para contabilizar ao custo da
+lavoura. Cada maquina, tem um custo de hora, automaticamente calculado. Para tal, deverão exigir
+as seguintes informações básicas: maquina, horainicial, horafinal, variedade, numerotalhao,
+cicloProducao.
+Prioridade: Importante
+[RF61] – Cadastrar Manutenção Periódica
+AgroProdutor – Sistema de Gestão Agropecuária - 18
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+Cada maquina, possui itens de manutenção que tem prazo de validade por uso
+conforme o numero de horas trabalhadas. O usuário deverá cadastrar os itens de manutenção
+periódica, bem como o numero de horas do prazo de utilização.
+Quando o prazo de validade por uso de algum item expira, o sistema deverá avisar
+ao usuário.
+Prioridade: Importante
+[RF62] – Efetuar Manutenção Periódica
+O usuário devera efetuar este função, para contabilizar o custo no valor da hora da
+maquina especifica. Para tal, deverão exigir as seguintes informações básicas: numeroMaquina,
+itemManutencao, horimetro.
+Prioridade: Importante
+[RF63] – Abastecimento da Frota
+O usuário devera cadastrar o abastecimento de cada maquina, assim atualizando o
+custo da hora da maquina. Para cada abastecimento, o estoque deverá ser consultado.
+Prioridade: Importante
+[RF64] – Associar Itens de Manutenção com Maquinas
+Cada maquina, possui um conjunto de itens de manutenção periódica Cada item,
+tem um prazo de utilizacão Assim, cada maquina, terá uma lista de itens de manutenção periódica e
+quando este expira. A cada nova troca, é substituída o horimetro da troca pelo atual da maquina.
+Prioridade: Importante
+[RF65] – Efetuar Manutenção Complementar
+Quando não houver uma troca de itens, e apenas um complemento, como por
+exemplo, 1 litro de óleo de motor, isto não afetará no prazo de utilização deste item.
+Prioridade: Importante
+2.8 Modulo Despesas
+Através do Modulo Despesas, será possível o lançamentos de todas as despesas, que
+serão alocadas a lavoura, que não sejam oriundas de Insumos e nem de Maquinas.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
+autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF66] – Cadastrar despesas por Variedade de cultura
+O usuário deverá cadastrar despesas especificas desta variedade de cultura. Assim, o
+custo desta variedade será atualizado. Para tal, deverão exigir as seguintes informações básicas:
+valorDespesa, variedade, numerotalhao, cicloproducao.
+Prioridade: Importante
+[RF67] – Cadastrar despesas por Talhão
+O usuário deverá cadastrar despesas especificas para um talhão. Após a efetivação, o
+sistema deverá ratear o valor do lançamento com as variedades associadas a este talhão. Para tanto,
+deverá ser rateado proporcionalmente ao tamanho de cada variedade.
+Prioridade: Importante
+AgroProdutor – Sistema de Gestão Agropecuária - 19
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF68] – Cadastrar despesas por Ciclo de Produção
+O usuário deverá cadastrar despesas especificas para este ciclo de produção. Após a
+efetivação, o sistema deverá ratear o valor do lançamento com os talhões associadas a este ciclo de
+produção. Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada talhão e de cada
+variedade.
+Prioridade: Importante
+[RF69] – Cadastrar despesas por Safra
+O usuário deverá cadastrar despesas especificas para esta safra. Após a efetivação, o
+sistema deverá ratear o valor do lançamento com os ciclos de produções associadas a esta safra.
+Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada ciclo de produção,
+consecutivamente para cada talhão e de cada variedade.
+Prioridade: Importante
+2.9 Modulo RH
+Através do Modulo RH, será efetuado o gerenciamento do quadro de funcionários.
+Este módulo não tem a intenção de substituir qualquer sistema de RH, e sim apenas para auxiliar no
+fechamento do saldo liquido de cada funcionário.
+Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
+autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF70] – Cadastro de Salários
+O usuário deverá cadastrar um salário base para cada funcionário.
+Prioridade: Importante
+[RF71] – Pagamento de férias
+O usuário deverá cadastrar o mês que o funcionário ira receber e/ou gozar férias. Se
+o funcionário não for gozar as férias, o sistema deverá calcular automaticamente o saldo de salário
+mensal mais o valor liquido das férias.
+Prioridade: Importante
+[RF72] – Pagamento de Gratificação
+No mês de recebimento, o sistema deverá multiplicar a quantidade de gratificação
+com o valor do índice Por exemplo. Funcionário X, recebe 100 sacas de soja por ano. No momento
+do pagamento da gratificação, o usuário deverá informar o valor da saca de soja, o sistema calculará
+o valor em reais.O funcionário poderá escolher receber em uma ou varias parcelas a gratificação.
+Prioridade: Importante
+[RF73] – Cadastro de Gratificação
+O usuário deverá cadastrar o valor da gratificação anual. Esta gratificação poderá ser
+cadastrada em qualquer moeda (Real, Soja, ...).
+Prioridade: Importante
+[RF74] – Lançamento de Débitos Mensais
+O usuário deverá lançar os débitos mensais de cada funcionário. Esses débitos se
+caracterizam como, convênio com farmácias, mercados, e outros. Também poderão ser lançados
+AgroProdutor – Sistema de Gestão Agropecuária - 20
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+débitos que serão descontados em vários meses.
+Prioridade: Importante
+[RF75] – Lançamento de créditos Mensais
+O usuário deverá lançar os créditos mensais de cada funcionário. Esses créditos se
+caracterizam como, estornos de débitos, repasse de outros funcionários, e outros. Também poderão
+ser lançados créditos que serão creditados em vários meses.
+Prioridade:
+2.10 Modulo Relatórios
+Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
+Operacional”.
+[RF76] – Utilização de Insumos por Talhão
+O usuário poderá solicitar um relatório onde mostra todos os insumos aplicados em
+um talhão especifico, mostrando a quantidade, e o valor total aplicado. Para poder escolher, o
+talhão, primeiro deverá escolher o ciclo de produção.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada aplicação de insumos, com sua data e quantidade;
+• Sintético: Mostra o somatório de cada insumo, com seu montante e seu valor
+total.
+Prioridade: Desejável
+[RF77] – Utilização de Insumos por Ciclo de Produção
+O usuário poderá solicitar um relatório onde mostra todos os insumos aplicados em
+um ciclo de produção especifico. Este relatório deverá mostrar agrupadamente, cada talhão que faz
+parte desse ciclo de produção, com um somatório no final.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada aplicação de insumos, com sua data e quantidade;
+• Sintético: Mostra o somatório de cada insumo, com seu montante e seu valor
+total.
+Prioridade: Desejável
+[RF78] – Utilização de Insumos X Custo
+O usuário poderá solicitar um relatório onde mostra todos os talhões agrupados por
+ciclo de produção, com coluna de tamanho, e valor total dos insumos utilizados.
+Prioridade: Desejável
+[RF79] – Utilização de Insumos X Quantidade
+O usuário poderá solicitar um relatório onde mostra onde um determinado insumo
+foi utilizado e sua quantidade por hectare.
+Prioridade: Desejável
+[RF80] – Utilização de Maquinas por Talhão
+O usuário poderá solicitar um relatório onde mostra todas maquinas que
+trabalharam em um talhão especifico, mostrando a quantidade, e o valor total trabalhado. Para poder
+escolher, o talhão, primeiro deverá escolher o ciclo de produção.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada maquina trabalhada, com sua data e quantidade de horas;
+• Sintético: Mostra o somatório de cada maquina, com o montante de horas
+trabalhadas e seu valor total.
+Prioridade: Desejável
+AgroProdutor – Sistema de Gestão Agropecuária - 21
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF81] – Utilização de Maquinas por Ciclo de Produção
+O usuário poderá solicitar um relatório onde mostra todas as maquinas que
+trabalharam em um ciclo de produção especifico. Este relatório deverá mostrar agrupadamente,
+cada talhão que faz parte desse ciclo de produção, com um somatório no final.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada maquina trabalhada, com sua data e quantidade de horas;
+• Sintético: Mostra o somatório de cada maquina, com o montante de horas
+trabalhadas e seu valor total.
+Prioridade: Desejável
+[RF82] – Utilização de Maquinas por Custo
+O usuário poderá solicitar um relatório onde mostra todos os talhões agrupados por
+ciclo de produção, com coluna de tamanho, e valor total e quantidades de horas trabalhadas.
+Prioridade: Desejável
+[RF83] – Utilização de Maquinas X Quantidade
+O usuário poderá solicitar um relatório onde mostra onde uma determinada maquina
+trabalhou, quantidade de horas agrupadas e sua quantidade por hectare.
+Prioridade: Desejável
+[RF84] – Extrato de Despesas por Talhão
+O usuário poderá solicitar um relatório onde mostra todas as despesas alocadas para
+um determinado talhão.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada despesa, com sua data e valor.
+• Sintético: Mostra o somatório agrupado por despesa e seu valor total.
+Prioridade: Desejável
+[RF85] – Extrato de Despesas por Ciclo de Produção
+O usuário poderá solicitar um relatório onde mostra todas as despesas alocadas para
+um determinado ciclo de produção.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada despesa, com sua data e valor.
+• Sintético: Mostra o somatório agrupado por despesa e seu valor total.
+Prioridade: Desejável
+[RF86] – Extrato de Despesas por Custo
+O usuário poderá solicitar um relatório onde mostra todas as despesas agrupadas por
+ciclo de produção, com coluna de tamanho do talhão, e valor total das despesas.
+Prioridade: Desejável
+[RF87] – Extrato de Despesas X Talhão
+O usuário poderá solicitar um relatório onde mostra onde uma determinada despesa
+foi alocada, mostrando valor e valor por hectares..
+Prioridade: Desejável
+[RF88] – Extrato Estoque Grãos
+O usuário poderá solicitar um relatório de todo o histórico de entrada e saída de
+grãos do estoque, agrupada por insumos
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra cada entrada ou saída de insumo.
+AgroProdutor – Sistema de Gestão Agropecuária - 22
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+• Sintético: Mostra o somatório agrupado por insumo e seu saldo atual.
+Prioridade: Desejável
+[RF89] – Extrato de Entrada de Grãos
+O usuário poderá solicitar um relatório de todas as entradas de grãos de uma safra
+especifica.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as entradas, com sua data.
+• Sintético: Mostra o somatório agrupado grão e seu saldo atual.
+Prioridade: Desejável
+[RF90] – Extrato Produtividade
+O usuário poderá solicitar um relatório de produtividade, onde mostra a quantidade
+de grãos colhidos agrupados por talhão.
+Prioridade: Desejável
+[RF91] – Extrato Motorista Fretista
+O usuário poderá solicitar um relatório das cargas com os pesos brutos que um
+determinado fretista transportou, para pagar pelo frete.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as viagens por data.
+• Sintético: Mostra o somatório agrupado por cultura e rota.
+Prioridade: Desejável
+[RF92] – Extrato vendas de Grãos
+O usuário poderá solicitar um relatório de todas as vendas efetuadas em uma
+determinada safra.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as vendas efetuadas
+• Sintético: Mostra o somatório agrupado por cultura e o cliente que comprou.
+Prioridade: Desejável
+[RF93] – Extrato Venda de Maquinas
+O usuário poderá solicitar um relatório de todas as vendas de maquinas em uma
+determinada safra.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as vendas efetuadas
+• Sintético: Mostra o somatório agrupado por cliente que comprou.
+Prioridade: Desejável
+[RF94] – Extrato Venda de Insumos
+O usuário poderá solicitar um relatório de todas as vendas de insumos em uma
+determinada safra.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as vendas efetuadas
+• Sintético: Mostra o somatório agrupado por insumos e cliente que comprou.
+Prioridade: Desejável
+[RF95] – Extrato saída de Grãos
+O usuário poderá solicitar um relatório de todas as saídas de grãos, associada a sua
+respectivas venda.
+O usuário poderá escolher dois modos de visualização:
+AgroProdutor – Sistema de Gestão Agropecuária - 23
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+• Analítico: Mostra todas as saídas efetuadas.
+• Sintético: Mostra o somatório agrupado por cultura e venda.
+Prioridade: Desejável
+[RF96] – Extrato saída Grãos-Diário
+O usuário poderá solicitar um relatório que mostra o saldo do dia anterior, e todas as
+saídas efetuadas em um dia especifico, de todas as culturas, atualizando o saldo.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as saídas efetuadas, agrupadas por cultura.
+• Sintético: Mostra o somatório agrupado por cultura, saldo anterior e saldo
+atual..
+Prioridade: Desejável
+[RF97] – Extrato Manutenção Geral
+O usuário poderá solicitar um relatório que mostra todas as manutenções efetuadas
+nas maquinas agrícolas
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as manutenções efetuadas.
+• Sintético: Mostra o somatório agrupado por maquina.
+Prioridade: Desejável
+[RF98] – Cadastro Manutenção
+O usuário poderá solicitar um relatório para visualizar quais itens de manutenção
+estão associados a quais maquinas, e qual a vida útil de cada item de manutenção.
+Prioridade: Desejável
+[RF99] – Formulário Manutenção Fazenda
+O usuário poderá imprimir um formulário, onde consta as maquinas que tem itens
+de manutenção vencidos, e que os mesmos devem ser substituídos. Neste formulário o funcionário
+responsável pela manutenção, deverá preencher e devolver o formulário.
+Prioridade: Desejável
+[RF100] – Balanço Geral
+O usuário poderá solicitar um relatório onde monstra todas os valores totais das
+despesas, dos insumos, das manutenções, da produtividade, do valor médio obtido pela venda de
+grãos agrupados por talhão. Neste relatório, poderá saber qual talhão deu mais lucro, qual teve mais
+prejuízo
+Prioridade: Essencial
+[RF101] – Extrato Contas a Pagar
+O usuário poderá solicitar um relatório onde mostra todos os compromissos à pagar
+ainda em aberto, seja vencidos, como a vencer. Neste relatório, os compromissos vencidos, serão
+gerados, acréscimos e multas, se houver. Os compromissos em outras moedas, serão convertidos
+para obter o valor em REAL.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todos os compromissos.
+• Sintético: Mostra o somatório agrupado por fornecedor.
+Prioridade: Desejável
+[RF102] – Extrato Contas a Receber
+O usuário poderá solicitar um relatório onde mostra todos os compromissos à
+receber ainda em aberto, seja vencidos, como a vencer. Neste relatório, os compromissos vencidos,
+AgroProdutor – Sistema de Gestão Agropecuária - 24
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+serão gerados, acréscimos e multas, se houver. Os compromissos em outras moedas, serão
+convertidos para obter o valor em REAL.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todos os compromissos.
+• Sintético: Mostra o somatório agrupado por cliente.
+Prioridade: Desejável
+[RF103] – Extrato Bancos
+O usuário poderá solicitar um relatório onde mostra todos os lançamentos efetuados,
+para obter assim o saldo de alguma conta bancaria.
+Prioridade: Desejável
+[RF104] – Extrato Compras Insumos
+O usuário poderá solicitar um relatório onde mostra todas as compras de insumos,
+efetuadas em uma determinada safra.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todos as compras de insumos.
+• Sintético: Mostra o somatório agrupado por insumos e fornecedor.
+Prioridade: Desejável
+[RF105] – Extrato Estoque Insumos
+O usuário poderá solicitar um relatório onde mostra todos as movimentações do
+estoque de insumos, detalhando, compra, empréstimo, devolução e utilização.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todos as movimentações por data, agrupada por insumo.
+• Sintético: Mostra o somatório agrupado por insumos e o saldo atual.
+Prioridade: Desejável
+[RF106] – Extrato empréstimos Insumos
+O usuário poderá solicitar um relatório onde mostra todos os empréstimos de
+insumos, seja como entrada, bem como saída.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todos os empréstimos por data.
+• Sintético: Mostra o somatório agrupado por insumos.
+Prioridade: Desejável
+[RF107] – Extrato Troca Insumos
+O usuário poderá solicitar um relatório onde mostra todas as trocas de insumos, seja
+como entrada, bem como saída.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as trocas por data.
+• Sintético: Mostra o somatório agrupado por insumos.
+Prioridade: Desejável
+[RF108] – Extrato Venda de Insumos
+O usuário poderá solicitar um relatório onde mostra todas as vendas de insumos.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as venda por data e cliente.
+• Sintético: Mostra o somatório agrupado por insumos e cliente.
+Prioridade: Desejável
+AgroProdutor – Sistema de Gestão Agropecuária - 25
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+[RF109] – Demonstrativo Transferência de Insumos
+O usuário poderá solicitar um relatório onde mostra todas as transferência de
+insumos entre estoques.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as transferência por data.
+• Sintético: Mostra o somatório agrupado por insumos e estoque.
+Prioridade: Desejável
+[RF110] – Demonstrativo Transferência de Grãos
+O usuário poderá solicitar um relatório onde mostra todas as transferência de
+insumos entre estoques.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as transferência por data.
+• Sintético: Mostra o somatório agrupado por insumos e estoque.
+Prioridade: Desejável
+[RF111] – Extrato Devolução de Insumos
+O usuário poderá solicitar um relatório onde mostra todas as devoluções de insumos
+efetuadas em uma safra especifica.
+O usuário poderá escolher dois modos de visualização:
+• Analítico: Mostra todas as devoluções por data.
+• Sintético: Mostra o somatório agrupado por insumos e fornecedor.
+Prioridade: Desejável
+3. REQUISITOS NÃO FUNCIONAIS
+Aqui serão tratados os requisitos não funcionais do sistema. Para uma melhor
+organização deste documento, os requisitos serão descritos em subseções:
+[RNF01] – Usabilidade
+O sistema deverá oferecer uma interface amigável, de fácil acesso e aprendizado,
+levando em consideração diferentes níveis sociais, culturais e econômicos dos futuros usuários.
+Prioridade: Importante
+[RNF02] – Confiabilidade
+O processamento das informações de entrada, assim como os resultados exibidos
+pelos diversos relatórios, devem sempre estar corretos e confiáveis.
+Prioridade: Essencial
+[RNF03] – Segurança de Acesso
+É desejável que o sistema possua controle de acesso às suas funcionalidades de
+acordo com o perfil do usuário. Para todos os usuários será necessário efetuar o login do sistema.
+Prioridade: Essencial
+[RNF04] – Criptografia
+É desejável que os dados confidenciais deverão ser criptografados para
+armazenamento.
+Prioridade: Importante
+[RNF05] – Suporte Técnico
+O sistema deverá conter meios para que os usuários, quando tiverem alguma duvida,
+AgroProdutor – Sistema de Gestão Agropecuária - 26
+Universidade Federal de Lavras – Pós-Graduação em Software Livre
+problema, bug, etc, dispor de um suporte técnico no uso do Sistema.
+Prioridade: Importante
+[RNF06] – Ajuda
+O sistema deverá conter dicas on-line e em tempo real sobre o funcionamento do
+sistema a todos os usuários.
+Prioridade: Desejável
+[RNF07] – Portabilidade
+O sistema deverá rodar
