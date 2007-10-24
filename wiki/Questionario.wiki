@@ -1,16 +1,14 @@
-Foi elaborado um questionário para os produtores, onde mostra o cenário atual.
+Foi elaborada uma pesquisa junto aos produtores rurais, onde mostrou o cenário atual desta categoria, mostrando resultados interessantes.
+Este pesquisa foi elaborada através de um questionário, onde foram enviadas perguntas para os produtores rurais. Estas perguntas foram enviadas via email.
+Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 retornaram o questionário.
 
-= Introdução =
-
-Add your content here.
-
-
-= Detalhes =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
-||Coluna01||Coluna02||Coluna03||
-||Coluna01||Coluna02||Coluna03||
+*Escolaridade*
+Uns dos resultados relevantes foi a média de idade, associada a escolaridade dos produtores, conforme tabela abaixo.
+||*_Produtor_*||*_Idade_*||*_Escolaridade_*||
+||Produtor01||33 Anos||Superior Completo||
+||Produtor02||44 Anos||Superior Completo||
+||Produtor03||42 Anos||Superior Completo||
+||Produtor04||56 Anos||Ensino Fundamental Incompleto||
+||Produtor05||51 Anos||Ensino Médio Completo||
+||Produtor06||42 Anos||Ensino Fundamental Incompleto||
+||Produtor07||30 Anos||Superior Completo||
