@@ -58,24 +58,24 @@
 ||RF022 Cadastrar Tipo de Maquinas||
 ||RF023 Cadastrar Tabela de Umidade||
 ||RF024 Cadastrar Tipos de Estoque||
+||RF025] Cadastrar Tipos de Atividades||
+||RF026] Cadastrar Motoristas Fretistas||
+||RF027] Cadastrar Caminhões Fretistas||
+||RF028] Cadastrar Rotas de Frete||
+||RF029] Cadastrar Bancos e Caixas||
+||RF030] Cadastrar Moeda||
+||RF031] Cadastrar Despesas||
+||RF032] Cadastrar Receitas||
+||RF033] Cadastrar Portador||
+||RF034] Associar Variedade á Talhão||
+||*2.4 Modulo Financeiro*||
 
-[RF025] Cadastrar Tipos de Atividades 13
-[RF026] Cadastrar Motoristas Fretistas 13
-[RF027] Cadastrar Caminhões Fretistas 13
-[RF028] Cadastrar Rotas de Frete 13
-[RF029] Cadastrar Bancos e Caixas 13
-[RF030] Cadastrar Moeda 13
-[RF031] Cadastrar Despesas 14
-[RF032] Cadastrar Receitas 14
-[RF033] Cadastrar Portador 14
-[RF034] Associar Variedade á Talhão 14
-2.4 Modulo Financeiro 14
-[RF035] Lançamento de contas a pagar 14
-[RF036] Lançamento de contas a receber 14
-[RF037] Pagamento de Contas a Pagar 15
-[RF038] Recebimento de Contas a Receber. 15
-[RF039] Lançamentos de Débitos Bancários 15
-[RF040] Lançamentos de créditos Bancários 15
+||RF035] Lançamento de contas a pagar 14
+||RF036] Lançamento de contas a receber 14
+||RF037] Pagamento de Contas a Pagar 15
+||RF038] Recebimento de Contas a Receber. 15
+||RF039] Lançamentos de Débitos Bancários 15
+||RF040] Lançamentos de créditos Bancários 15
 [RF041] Efetuar conciliação bancaria 15
 2.5 Modulo Grãos 15
 [RF042] Entrada de Grãos pela Colheita 15
