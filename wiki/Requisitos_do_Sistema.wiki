@@ -167,34 +167,26 @@ Este documento especifica o sistema AGROPRODUTOR, conforme requisitos iniciais p
 _*1.1 Propósito_*
 Esta seção tem como intuito delinear os propósitos do documento de especificação de  requisitos de software, bem como, especificar o público-alvo ao qual foi destinado. O documento tem como propósito servir de base para um acordo entre cliente e equipe de desenvolvimento, no sentido de especificar as funcionalidades, além das características de alto nível que devem ser providas pelo mesmo.
 
-1.2 Escopo
-Esta seção tem como objetivo a identificação por nome do produto de software a ser
-desenvolvido, definição do escopo do produto (limitando o que o produto deverá fazer) e descrição
-da aplicação do produto sendo especificado seus beneficios, propósitos e objetivos.
-AgroProdutor, ou Sistema de Gestão Administrativa, Operacional e Financeira para
-Produtores Rurais, foi o nome atribuído ao produto de software que será desenvolvido. O escopo
-desejado para o sistema está representado pelo Documento de Requisitos Iniciais apresentados pelo
-cliente. As dúvidas que surgiram e foram sanadas no decorrer do desenvolvimento deste documento
-de requisitos, bem como a adição de novas funcionalidades, aconteceram por meio de reuniões,
-virtuais e física com o cliente, telefone e emails.
-1.3 Definições, acrônimos e abreviações
-AgroProdutor Sistema de Gestão Administrativa, Operacional e Financeira para
-Produtores Rurais
-Talhão Parte de uma área de terra, geralmente delimitada por estrada, cerca, rio,..
-Variedade Variedade de cultura que será plantada. Ie. CD219 (variedade de Semente
-de Soja)
-Ciclo de Produção É formado por um ou mais talhões plantados de uma mesma cultura. No
+_*1.2 Escopo*_
+Esta seção tem como objetivo a identificação por nome do produto de software a ser desenvolvido, definição do escopo do produto (limitando o que o produto deverá fazer) e  descrição da aplicação do produto sendo especificado seus beneficios, propósitos e  objetivos. 
+AgroProdutor, ou Sistema de Gestão Administrativa, Operacional e Financeira para Produtores Rurais, foi o nome atribuído ao produto de software que será desenvolvido. O escopo desejado para o sistema está representado pelo Documento de Requisitos Iniciais apresentados pelo cliente. As dúvidas que surgiram e foram sanadas no decorrer do desenvolvimento deste documento de requisitos, bem como a adição de novas funcionalidades, aconteceram por meio de reuniões, virtuais e física com o cliente, telefone e emails. 
+
+_*1.3 Definições, acrônimos e abreviações*_
+||AgroProdutor||Sistema de Gestão Administrativa, Operacional e Financeira para
+Produtores Rurais ||
+||Talhão||Parte de uma área de terra, geralmente delimitada por estrada, cerca, rio,..||
+||Variedade||Variedade de cultura que será plantada. Ie. CD219 (variedade de Semente
+de Soja)||
+||Ciclo de Produção||É formado por um ou mais talhões plantados de uma mesma cultura. No
 nome também leva o tipo de Safra, (safra de verão, ou safrinha) Ie. Soja
-Safra 2007/2008 – Milho Safrinha 2008/2008.
-Safra Semelhante ao ano contábil de um contador, porém o ano do produtores
+Safra 2007/2008 – Milho Safrinha 2008/2008||
+||Safra||Semelhante ao ano contábil de um contador, porém o ano do produtores 
 do sudoeste goiano, iniciam em Agosto de terminam em Julho do ano
 seguinte. Neste período, os produtores tem duas colheitas, chamadas de
-Safra de Verão e Safrinha.
-Safra de Verão É o período de plantio e colheita, que se inicia em agosto e termina com a
-colheita, geralmente no final de maio do ano corrente. É chamada apenas
-“safra”.
-Safrinha É o período de plantio e colheita, que se inicia inicio de Fevereiro e
-termina com a colheita, geralmente no final de julho do ano corrente.
+Safra de Verão e Safrinha.||
+||Safra de Verão||É o período de plantio e colheita, que se inicia em agosto e termina com a colheita, geralmente no final de maio do ano corrente. É chamada apenas “safra”||
+||Safrinha||É o período de plantio e colheita, que se inicia inicio de Fevereiro e termina com a colheita, geralmente no final de julho do ano corrente.||
+
 1.4 Prioridades dos requisitos
 Para estabelecer a prioridade dos requisitos foram adotados as denominações
 “essencial”, “importante” e “desejável”. A prioridade dos requisitos é atualizada no gerenciamento
