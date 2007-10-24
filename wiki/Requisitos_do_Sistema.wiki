@@ -195,117 +195,133 @@ Para estabelecer a prioridade dos requisitos foram adotados as denominações
 “essencial”, “importante” e “desejável”. A prioridade dos requisitos é atualizada no
 gerenciamento do escopo das etapas do projeto e na definição das prioridades durante o desenvolvimento do sistema.
 
-● *Essencial*: 
-requisito sem o qual o sistema não entra em funcionamento. São
+● *Essencial*: requisito sem o qual o sistema não entra em funcionamento. São
 requisitos imprescindíveis, devem ser implementados desde as primeiras implantações do
 sistema;
 
-● *Importante*: 
-requisito sem o qual o sistema entra em funcionamento, mas de
+● *Importante*: requisito sem o qual o sistema entra em funcionamento, mas de
 forma não satisfatória. Devem ser implantados o mais breve possível, mas se não forem,
 parte do sistema poderá ser implantada mesmo assim.
 
-● *Desejável*: 
-requisito que não compromete as funcionalidades básicas do
+● *Desejável*: requisito que não compromete as funcionalidades básicas do
 sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. São requisitos que podem ser implantados por último, sem comprometer o funcionamento do sistema.
 
 -*1.5 Perfis de Usuários pré-definidos*_
 O sistema virá com 3 perfis pré-definidos:
-• Administrador: terá acesso a todo o sistema, sem restrições;
-• Operacional: terá acesso ao todos os módulos, exceto o Módulo Administrativo;
-• Cadastro : terá acesso apenas ao Módulo de Cadastros;
-2. Requisitos Funcionais
+
+• *Administrador*: terá acesso a todo o sistema, sem restrições;
+
+• *Operacional*: terá acesso ao todos os módulos, exceto o Módulo Administrativo;
+
+• *Cadastro*: terá acesso apenas ao Módulo de Cadastros;
+
+_*2. Requisitos Funcionais*_
 Este capitulo visa fornecer uma descrição detalhada dos requisitos, incluindo
-detalhes sobre valores de entrada (estímulos) ao sistema, valores de Saída (respostas) do sistema, e
-todas as funções executadas pelo sistema, em resposta a alguma entrada, ou em suporte a uma
-Saída.
+detalhes sobre valores de entrada (estímulos) ao sistema, valores de Saída (respostas) do sistema, e todas as funções executadas pelo sistema, em resposta a alguma entrada, ou em suporte a uma Saída.
+
 Os requisitos funcionais do sistema serão apresentados de acordo com o módulo em
-que se enquadram, por meio de uma narrativa de processamento. As dependências entre módulos,
-pré-condições, pós-condições, bem como a prioridade desejada de cada módulo ou sub-módulo,
-também serão explicitadas.
-2.1 Modulo Autenticação e Autorização
+que se enquadram, por meio de uma narrativa de processamento. As dependências entre módulos, pré-condições, pós-condições, bem como a prioridade desejada de cada módulo ou sub-módulo,também serão explicitadas.
+
+_*2.1 Modulo Autenticação e Autorização*_
 Ó Modulo Autenticação e Autorização corresponde a um ponto único de entrada
-para o sistema e conseqüentemente para os outros módulos.
-O modulo recebe como entrada o nome do usuário do sistema e a senha
-correspondente. Antes de enviar a senha, seu valor é encriptado. O modulo então, verifica se o
-usuário já esta cadastrado, e se sua senha confere com o valor recebido. Em caso afirmativo, o
-retorno consiste no perfil e na lista de permissões relacionadas ao usuário em questão. Tal lista
-deverá ser utilizada pelos outros módulos, a fim de verificar se o usuário possui permissão de
-acesso a determinada parte do sistema.
+para o sistema e conseqüentemente para os outros módulos. O modulo recebe como entrada o nome do usuário do sistema e a senha correspondente. Antes de enviar a senha, seu valor é encriptado. O modulo então, verifica se o usuário já esta cadastrado, e se sua senha confere com o valor recebido. Em caso afirmativo, o retorno consiste no perfil e na lista de permissões relacionadas ao usuário em questão. Tal lista deverá ser utilizada pelos outros módulos, a fim de verificar se o usuário possui permissão de acesso a determinada parte do sistema.
+
 Este módulo possui quatro entidades básicas:
-● Usuário: corresponde a quem terá acesso ao sistema;
-● Perfil: corresponde a função do usuário no sistema;
-● Permissão: corresponde a cada uma das possíveis tarefas do sistema;
-● Status: corresponde ao estado atual do usuário.
+
+● _Usuário_: corresponde a quem terá acesso ao sistema;
+
+● _Perfil_: corresponde a função do usuário no sistema;
+
+● _Permissão_: corresponde a cada uma das possíveis tarefas do sistema;
+
+● _Status_: corresponde ao estado atual do usuário.
+
 Como requisito inicial do sistema, um usuário padrão deve ser cadastrado. O sistema
 cadastrará automaticamente o usuário ADMIN, com senha ADM654321 com todos o livre acesso
 aos módulos e tarefas do sistema.
+
 Os Perfis correspondem a cada uma das possíveis funções dos usuários do sistema.
-Cada perfil tem uma lista de permissões que podem ser alteradas conforme for a necessidade. Cada
-usuário pode ter associado a ele, apenas um Perfil.
+Cada perfil tem uma lista de permissões que podem ser alteradas conforme for a necessidade. Cada usuário pode ter associado a ele, apenas um Perfil.
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo,
 Operacional ou Cadastro”.
-AgroProdutor – Sistema de Gestão Agropecuária - 8
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF01] – Autenticar usuário
+
+
+_*[RF001] – Autenticar usuário*_
+
 Para acessar o sistema, o usuário deverá estar autenticado. Este módulo tem como
-entrada o nome do usuário e sua senha. Após a encriptação da senha na maquina local, evitando
-assim que a senha passe em aberto pela rede, os dados serão validados, permitindo ou não acesso do
-usuário ao sistema. A saída do modulo consiste no perfil e na lista de permissões associada ao
-usuário autenticado, ou um erro caso o usuário não esteja autenticado.
+entrada o nome do usuário e sua senha. Após a encriptação da senha na maquina local, evitando assim que a senha passe em aberto pela rede, os dados serão validados, permitindo ou não acesso do usuário ao sistema. A saída do modulo consiste no perfil e na lista de permissões associada ao usuário autenticado, ou um erro caso o usuário não esteja autenticado.
+
 As tentativas de autenticação deverão ser limitadas a três. Caso ocorram mais de três
-tentativas invalidas, o status do usuário deverá ser automaticamente modificado para bloqueado,
-impedindo assim seu futuro acesso ao sistema. Somente o Administrador poderá alterar o status do
-usuário, permitindo novamente o acesso ao sistema.
-Prioridade: Essencial
-[ R F02] – Autorizar Usuário
+tentativas invalidas, o status do usuário deverá ser automaticamente modificado para bloqueado, impedindo assim seu futuro acesso ao sistema. Somente o Administrador poderá alterar o status do usuário, permitindo novamente o acesso ao sistema.
+
+_Prioridade: Essencial_
+
+
+_*[RF002] – Autorizar Usuário*_
+
 Para o acesso aos outros módulos do sistema, o usuário, além de estar autenticado,
-deverá estar autorizado. Uma vez que tenha acontecido a autenticação, a tentativa de acesso a
-qualquer modulo do sistema executará automaticamente o sub-módulo de autorização.
+deverá estar autorizado. Uma vez que tenha acontecido a autenticação, a tentativa de acesso a qualquer modulo do sistema executará automaticamente o sub-módulo de autorização.
 Este sub-módulo tem como entrada a lista de permissões correspondente ao perfil do
-usuário obtida na autenticação. O sistema verifica se o módulo ao qual o usuário deseja acesso está
-relacionado ao perfil e ás permissões associadas. O sub-modulo, retorna se o usuário tem permissão
-ou não de acessar o modulo em questão.
-Prioridade: Essencial
-2.2 Módulo Administrativo
-Através do Modulo Administrativo, será possível o cadastro de novos usuários,
-estabelecimento de perfis e lista de permissões, cadastro e manutenção de entidades, bem como a
-execução de qualquer tarefa possibilitada pelo sistema.
+usuário obtida na autenticação. O sistema verifica se o módulo ao qual o usuário deseja acesso está relacionado ao perfil e ás permissões associadas. O sub-modulo, retorna se o usuário tem permissão ou não de acessar o modulo em questão.
+
+_Prioridade: Essencial_
+
+
+*2.2 Módulo Administrativo*
+
+Através do Modulo Administrativo, será possível o cadastro de novos usuários, estabelecimento de perfis e lista de permissões, cadastro e manutenção de entidades, bem como a execução de qualquer tarefa possibilitada pelo sistema.
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil
-e a lista de permissões do usuário autenticado. Uma vez que o Administrador do sistema esteja
-devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos de administração é
-liberado.
+e a lista de permissões do usuário autenticado. Uma vez que o Administrador do sistema esteja devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos de administração é liberado.
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo”.
-[RF03] – Cadastrar Usuário
+
+
+_*[RF003] – Cadastrar Usuário*_
+
 O Administrador do sistema poderá cadastrar novos usuários. Para tal, deverão
 exigir as seguintes informações básicas: Nome completo, Login, Senha, Perfil, Status.
 O usuário quando criado, começa com o status como estado “Ativo”.
-Prioridade: Essencial
-[RF04] – Cadastrar Perfil
+
+_Prioridade: Essencial_
+
+
+_*[RF04] – Cadastrar Perfil*_
+
 O administrador do sistema poderá cadastrar novos perfis. Para tal, deverão exigir as
 seguinte informações básicas: Descrição, Lista de Permissões.
 Entende-se por “Lista de Permissões”, os possíveis módulos que o usuário poderá
 acessar.
-Prioridade: Essencial
-[RF05] – Alterar Status do Usuário
+
+_Prioridade: Essencial_
+
+
+_*[RF05] – Alterar Status do Usuário*_
+
 Existem três status que podem ser atribuídos aos usuários:
-AgroProdutor – Sistema de Gestão Agropecuária - 9
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
+
 ● Ativo
+
 ● Bloqueado
+
 ● Inativo
+
 Enquanto o usuário estiver com o status “Bloqueado” ou “Inativo”, não poderá
 acessar o sistema.
+
 O Status “Inativo”, somente será usado quando o usuário for desligado da empresa,
 ou seja, a probabilidade de voltar a acessar o sistema é perto de nula.
+
 O Status “Bloqueado”, ocorrerá por duas ocasiões: O sistema deverá
-automaticamente trocar o status do usuário para “Bloqueado”, com três tentativas de autenticação
-invalidas sucessivas, ou quando o administrador, restringir o acesso ao sistema, por determinado
-tempo.
+automaticamente trocar o status do usuário para “Bloqueado”, com três tentativas de autenticaçãoinvalidas sucessivas, ou quando o administrador, restringir o acesso ao sistema, por determinadotempo.
+
 O sub-modulo permite ao administrador alterar o status do usuário. Para acessá-lo, o
 administrador deve estar devidamente autenticado e autorizado.
-Prioridade: Importante
-[RF06] – Alterar Perfil
+
+_Prioridade: Importante_
+
+
+_*[RF06] – Alterar Perfil*_
+
 O Administrador do sistema poderá alterar o Perfil previamente cadastrado, para tal,
 poderá alterar a Descrição do Perfil, a lista de permissões associadas ao Perfil. Para tal poderá
 incluir acessos a mais módulos, bem como restringir a menos módulos.
