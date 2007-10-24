@@ -330,7 +330,7 @@ de permissão em questão.
 _Prioridade: Importante_
 
 
-_*[RF07] – Cadastrar Safra*_
+_*RF007 – Cadastrar Safra*_
 
 O Administrador do sistema poderá cadastrar novas Safras. Para tal, deverão exigir
 as seguintes informações básicas: Descrição e observação. Safra, é o termo usado para definir um novo ano de lavoura. Como todos os custos são concentrados por safras, dados lançados em uma safra não tem ligação com outras safras. Safra se equipara a um ano contábil, porém que, no sudoeste goiano, uma safra nova começa em Agosto e tem se termino em Julho do ano seguinte.
@@ -356,45 +356,58 @@ _Prioridade: Essencial_
 _*RF009 – Cadastrar Talhão*_
 O usuário do sistema poderá cadastrar novos talhões. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Tamanho Real da área plantada em hectares.
-AgroProdutor – Sistema de Gestão Agropecuária - 10
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
 Os produtores costumam dividir as lavouras em vários pedaços de áreas, as vezes
-divididos por uma estrada, cerca ou mesmo pertencendo a outra matricula. Estas divisões são
-chamados de talhões.
+divididos por uma estrada, cerca ou mesmo pertencendo a outra matricula. Estas divisões são chamados de talhões.
 Cada talhão tem um tamanho de área, mas nada impede de o produtor plantar menos
 área do que no cadastro.
-Prioridade: Importante
-[RF10] – Cadastrar Centro de Custo
+
+_Prioridade: Importante_
+
+_*RF010 – Cadastrar Centro de Custo*_
 O usuário do sistema poderá cadastrar novos Centros de Custo. Para tal, deverão
 exigir as seguintes informações básicas: Descrição e observação.
 Centro de custo, são aglomerações de talhões, localizados próximos fisicamente.
-Prioridade: Importante
-[RF11] – Cadastrar Ciclo de Produção
+
+_Prioridade: Importante_
+
+_*RF011 – Cadastrar Ciclo de Produção*_
+
 O usuário do sistema poderá cadastrar novos Ciclo de Produção. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Safra, Cultura, Tamanho da área, Observação.
 Ciclo de Produção, são as culturas plantadas durante a safra, por exemplo, “Soja
 Safra 2007/2008”, que é um ciclo de produção da Cultura de Soja, da Safra 2007/2008.
-Prioridade: Importante
-[RF12] – Cadastrar Cultura
+
+_Prioridade: Importante_
+
+_*RF012 – Cadastrar Cultura*_
+
 O usuário do sistema poderá cadastrar novas culturas: Para tal, deverão exigir as
 seguintes informações básicas: Descrição e observação.
 Cultura é o termo usado para determinar que tipo de grão será plantado, como por
 exemplo, Soja, Milho, Girassol, ...
-Prioridade: Importante
-[RF13] – Cadastrar Variedades de Cultura
+
+_Prioridade: Importante_
+
+_*RF013 – Cadastrar Variedades de Cultura*_
+
 O usuário do sistema poderá cadastrar novas variedades de cultura. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Cultura, Observação e Status.
 Variedade é o termo usado para o produtor poder fazer analises de custo de
-produtividade entre vários tipos de cultura que existem no mercado, com por exemplo, para a
-Cultura de Soja, temos a variedade Msoy, Valiosa, Anta, 7002, ...
-Prioridade: Importante
-[RF14] – Cadastrar Armazém de Grãos
+produtividade entre vários tipos de cultura que existem no mercado, com por exemplo, para a Cultura de Soja, temos a variedade Msoy, Valiosa, Anta, 7002, ...
+
+
+_Prioridade: Importante_
+
+_*RF014 – Cadastrar Armazém de Grãos*_
+
 O usuário do sistema poderá cadastrar novos armazéns. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Observação e Status..
 Armazém é o termo utilizado para determinar onde o grão, após colhido será
 armazenado. Existem armazéns, próprios e de terceiros. Ambos são cadastrados nestes sub-modulo.
-Prioridade: Importante
-[RF15] – Cadastrar Silo de Armazenagem de Grãos
+
+_Prioridade: Importante_
+
+_*RF015 – Cadastrar Silo de Armazenagem de Grãos*_
 O usuário do sistema poderá cadastrar novos silos de armazenagem. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação e Status.
 Silo de Armazenagem são os locais propriamente onde os grão serão armazenados.
