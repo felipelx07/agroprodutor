@@ -3,7 +3,28 @@ Este pesquisa foi elaborada através de um questionário, onde foram enviadas pe
 Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 retornaram o questionário.
 
 *QUESTIONÁRIO*
+||1|| – Nome:||
+||2|| – Quantidade de área plantada:||
+||3|| – Possui Computador:||
+||4|| – Quantos Computadores:||
+||5|| – Quantos Funcionários abastecem os computadores:||
+||6|| – Grau de estudo do proprietário:||
+||7|| – Conhece Software Livre:||
+||8|| – Já usou software livre:||
+||9|| – Conhece Linux:||
+||10|| – Já usou Linux:||
+||11|| – Qual sistema operacional que usa:||
+||12|| – Possui um projeto de investimento em informática a curto período:||
+||13|| – Possui um sistema de gestão:||
+||14|| – Está satisfeito:||
+||15|| – Comodato, Pago, Alugado:||
+||16|| – Existe suporte:||
+||17|| - Está satisfeito com o suporte:||
+||18|| – Precisou de melhorias:||
+||19|| – O que acha de participar de um projeto de software livre:||
+||20|| – Senão dependesse de dinheiro, o que mais dificultaria você a participar de um projeto de software livre:||
 
+*Por motivos obvios, os nomes dos produores serão preservados.*
 
 *Escolaridade*
 Uns dos resultados relevantes foi a média de idade, associada a escolaridade dos produtores, conforme tabela abaixo.
