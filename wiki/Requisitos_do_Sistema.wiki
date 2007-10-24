@@ -14,14 +14,14 @@
 
 *Histórico de Alterações*
 ||Data||Versão||Descrição||Ultimo RF||Ultimo RNF||Autor||
-||01/08/2007|| 1.00|| * Inicio da Documentação|| - || - ||João Paraiba||
-||15/09/2007|| 1.00|| * Formatação do Documento || RF 110 || RNF 07 ||João Paraiba||
-||16/09/2007|| 1.00|| * Reestruturação dos Requisitos || RF 110 || RNF 07 ||João Paraiba||
-||17/09/2007|| 1.00|| * Revisão Geral do Documento || RF 111 || RNF 07 ||João Paraiba||
-||20/09/2007|| 1.00|| * Realocação do [RF003] que passou a ser chamado de [RF008]
-                      * Inserção de Perfis de Usuários prédefinidos
-                      * Substituição do Modulo Operacional para Modulo Cadastros
-                      * Classificação dos Requisitos quanto ao perfil pré=definido || RF 111 || RNF 07 ||João Paraiba||
+||01/08/2007||1.00||Inicio da Documentação|| - || - ||João Paraiba||
+||15/09/2007||1.00||Formatação do Documento || RF 110 || RNF 07 ||João Paraiba||
+||16/09/2007||1.00||Reestruturação dos Requisitos || RF 110 || RNF 07 ||João Paraiba||
+||17/09/2007||1.00||Revisão Geral do Documento || RF 111 || RNF 07 ||João Paraiba||
+||20/09/2007||1.00||Realocação do [RF003] que passou a ser chamado de [RF008]|| || || ||
+|| || ||Inserção de Perfis de Usuários prédefinidos|| || || ||
+|| || ||Substituição do Modulo Operacional para Modulo Cadastros|| || || ||
+|| || ||Classif. dos Requisitos quanto ao perfil pré=definido || RF 111 || RNF 07 || João Paraiba||
 
 AgroProdutor – Sistema de Gestão Agropecuária - 2
 Universidade Federal de Lavras – Pós-Graduação em Software Livre
