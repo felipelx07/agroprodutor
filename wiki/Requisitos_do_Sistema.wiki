@@ -32,7 +32,7 @@
 ||1.5 Perfis de Usuários pré-definidos||
 ||2 Requisitos Funcionais||
 ||*2.1 Modulo de Autenticação e Autorização*||
-||RF001 Autenticar Usuário||
+||[RF001] Autenticar Usuário||
 ||RF002 Autorizar Usuário||
 ||*2.2 Modulo Administrativo*||
 ||RF003 Cadastrar Usuário||
