@@ -38,11 +38,10 @@
 ||[RF003] Cadastrar Usuário||
 ||[RF004] Cadastrar Perfil||
 ||[RF005] Alterar Status do Usuário||
-
-[RF006] Alterar Perfil 10
-[RF007] Cadastrar Safra 10
-2.3 Modulo Cadastros 10
-[RF008] Escolher Safra 10
+||[RF006] Alterar Perfil||
+||[RF007] Cadastrar Safra||
+||2.3 Modulo Cadastros||
+||[RF008] Escolher Safra||
 [RF009] Cadastrar Talhão 10
 [RF010] Cadastrar Centro de Custo 11
 [RF011] Cadastrar Ciclo de Produção 11
