@@ -190,23 +190,20 @@ _*1.3 Definições, acrônimos e abreviações*_
 ||Safrinha||É o período de plantio e colheita, que se inicia inicio de Fevereiro e|| 
 || || termina com a colheita, geralmente no final de julho do ano corrente.||
 
-1.4 Prioridades dos requisitos
+_*1.4 Prioridades dos requisitos*_
 Para estabelecer a prioridade dos requisitos foram adotados as denominações
-“essencial”, “importante” e “desejável”. A prioridade dos requisitos é atualizada no gerenciamento
-do escopo das etapas do projeto e na definição das prioridades durante o desenvolvimento do
-AgroProdutor – Sistema de Gestão Agropecuária - 7
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-sistema.
-● Essencial: requisito sem o qual o sistema não entra em funcionamento. São
+“essencial”, “importante” e “desejável”. A prioridade dos requisitos é atualizada no
+gerenciamento do escopo das etapas do projeto e na definição das prioridades durante o desenvolvimento do sistema.
+● *Essencial*: requisito sem o qual o sistema não entra em funcionamento. São
 requisitos imprescindíveis, devem ser implementados desde as primeiras implantações do
 sistema;
-● Importante: requisito sem o qual o sistema entra em funcionamento, mas de
+● *Importante*: requisito sem o qual o sistema entra em funcionamento, mas de
 forma não satisfatória. Devem ser implantados o mais breve possível, mas se não forem,
 parte do sistema poderá ser implantada mesmo assim.
-● Desejável: requisito que não compromete as funcionalidades básicas do
-sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. São requisitos que
-podem ser implantados por último, sem comprometer o funcionamento do sistema.
-1.5 Perfis de Usuários pré-definidos
+● *Desejável*: requisito que não compromete as funcionalidades básicas do
+sistema, isto é, o sistema pode funcionar de forma satisfatória sem ele. São requisitos que podem ser implantados por último, sem comprometer o funcionamento do sistema.
+
+-*1.5 Perfis de Usuários pré-definidos*_
 O sistema virá com 3 perfis pré-definidos:
 • Administrador: terá acesso a todo o sistema, sem restrições;
 • Operacional: terá acesso ao todos os módulos, exceto o Módulo Administrativo;
