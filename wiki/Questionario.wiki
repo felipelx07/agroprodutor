@@ -4,7 +4,8 @@ Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 r
 
 *Escolaridade*
 Uns dos resultados relevantes foi a média de idade, associada a escolaridade dos produtores, conforme tabela abaixo.
-||_*Produtor*_||*_Idade_*||*_Escolaridade_*||
+
+||_*Produtor*_||_*Idade*_||_*Escolaridade*_||
 ||Produtor01||33 Anos||Superior Completo||
 ||Produtor02||44 Anos||Superior Completo||
 ||Produtor03||42 Anos||Superior Completo||
@@ -12,3 +13,5 @@ Uns dos resultados relevantes foi a média de idade, associada a escolaridade do
 ||Produtor05||51 Anos||Ensino Médio Completo||
 ||Produtor06||42 Anos||Ensino Fundamental Incompleto||
 ||Produtor07||30 Anos||Superior Completo||
+
+Pode concluir que, 57,14% deste universo de produtores, tem Ensino Superior. Este dado foi surpreendente. Com uma média de 42,5 anos de idade, associada à escolaridade percebe-se que a imagem dos produtores deixou de ser aquela de senhores de idade, trabalhando com pequenas áreas e com pouco estudo.
