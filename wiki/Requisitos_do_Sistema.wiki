@@ -32,7 +32,7 @@
 ||1.5 Perfis de Usuários pré-definidos||
 ||2 Requisitos Funcionais||
 ||*2.1 Modulo de Autenticação e Autorização*||
-||RF001 [Autenticar Usuário]||
+||RF001 Autenticar Usuário||
 ||RF002 Autorizar Usuário||
 ||*2.2 Modulo Administrativo*||
 ||RF003 Cadastrar Usuário||
@@ -58,60 +58,58 @@
 ||RF022 Cadastrar Tipo de Maquinas||
 ||RF023 Cadastrar Tabela de Umidade||
 ||RF024 Cadastrar Tipos de Estoque||
-||RF025] Cadastrar Tipos de Atividades||
-||RF026] Cadastrar Motoristas Fretistas||
-||RF027] Cadastrar Caminhões Fretistas||
-||RF028] Cadastrar Rotas de Frete||
-||RF029] Cadastrar Bancos e Caixas||
-||RF030] Cadastrar Moeda||
-||RF031] Cadastrar Despesas||
-||RF032] Cadastrar Receitas||
-||RF033] Cadastrar Portador||
-||RF034] Associar Variedade á Talhão||
+||RF025 Cadastrar Tipos de Atividades||
+||RF026 Cadastrar Motoristas Fretistas||
+||RF027 Cadastrar Caminhões Fretistas||
+||RF028 Cadastrar Rotas de Frete||
+||RF029 Cadastrar Bancos e Caixas||
+||RF030 Cadastrar Moeda||
+||RF031 Cadastrar Despesas||
+||RF032 Cadastrar Receitas||
+||RF033 Cadastrar Portador||
+||RF034 Associar Variedade á Talhão||
 ||*2.4 Modulo Financeiro*||
+||RF035 Lançamento de contas a pagar||
+||RF036 Lançamento de contas a receber||
+||RF037 Pagamento de Contas a Pagar||
+||RF038 Recebimento de Contas a Receber||
+||RF039 Lançamentos de Débitos Bancários||
+||RF040 Lançamentos de créditos Bancários||
+||[RF041 Efetuar conciliação bancaria||
+||*2.5 Modulo Grãos*||
+||RF042 Entrada de Grãos pela Colheita||
+||RF043 Entrada de Grãos por Empréstimos||
+||RF044 Comprar Grãos||
+||RF045 Venda de Grãos||
+||RF046 Saída de Grãos por Venda||
+||RF047 Saída de Grãos por Empréstimos||
+||RF048 Saída de Grãos para pagamentos||
+||RF049 Entrada de Grãos por recebimento||
+||RF050 Transferência de Grãos entre Armazém||
+||2.6 Modulo Insumos||
+||RF051 Compra de Insumos||
+||RF052 Entrada de Insumos por empréstimos||
+||RF053 Troca de Insumos||
+||RF054 Saída de Insumos para Lavoura||
+||RF055 Saída de Insumos por empréstimos||
+||RF056 Venda de Insumos||
+||RF057 Devolução de Insumos Comprados||
+||RF058 Transferência de Insumo entre Estoques||
+||RF059 Transferência de Insumos entre Safra||
+||2.7 Modulo Frota||
+||RF060 Cadastrar horas maquinas trabalhadas||
+||RF061 Cadastrar Manutenção Periódica||
+||RF062 Efetuar Manutenção Periódica||
+||RF063 Abastecimento da Frota||
+||RF064 Associar Itens de Manutenção com Maquinas||
+||RF065 Efetuar Manutenção Complementar||
+||2.8 Modulo Despesas||
+||RF066 Cadastrar despesas por Variedade de cultura||
+||RF067 Cadastrar despesas por Talhão||
+||RF068 Cadastrar despesas por Ciclo de Produção||
+||RF069 Cadastrar despesas por Safra||
+||2.9 Modulo RH 20||
 
-||RF035] Lançamento de contas a pagar 14
-||RF036] Lançamento de contas a receber 14
-||RF037] Pagamento de Contas a Pagar 15
-||RF038] Recebimento de Contas a Receber. 15
-||RF039] Lançamentos de Débitos Bancários 15
-||RF040] Lançamentos de créditos Bancários 15
-[RF041] Efetuar conciliação bancaria 15
-2.5 Modulo Grãos 15
-[RF042] Entrada de Grãos pela Colheita 15
-[RF043] Entrada de Grãos por Empréstimos 16
-[RF044] Comprar Grãos 16
-[RF045] Venda de Grãos 16
-[RF046] Saída de Grãos por Venda 16
-[RF047] Saída de Grãos por Empréstimos 16
-[RF048] Saída de Grãos para pagamentos 16
-[RF049] Entrada de Grãos por recebimento 16
-[RF050] Transferência de Grãos entre Armazém 17
-2.6 Modulo Insumos 17
-[RF051] Compra de Insumos 17
-[RF052] Entrada de Insumos por empréstimos 17
-[RF053] Troca de Insumos 17
-[RF054] Saída de Insumos para Lavoura 17
-[RF055] Saída de Insumos por empréstimos 18
-[RF056] Venda de Insumos 18
-[RF057] Devolução de Insumos Comprados 18
-[RF058] Transferência de Insumo entre Estoques 18
-AgroProdutor – Sistema de Gestão Agropecuária - 4
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF059] Transferência de Insumos entre Safra 18
-2.7 Modulo Frota 18
-[RF060] Cadastrar horas maquinas trabalhadas 18
-[RF061] Cadastrar Manutenção Periódica 18
-[RF062] Efetuar Manutenção Periódica 19
-[RF063] Abastecimento da Frota 19
-[RF064] Associar Itens de Manutenção com Maquinas 19
-[RF065] Efetuar Manutenção Complementar 19
-2.8 Modulo Despesas 19
-[RF066] Cadastrar despesas por Variedade de cultura 19
-[RF067] Cadastrar despesas por Talhão 19
-[RF068] Cadastrar despesas por Ciclo de Produção 20
-[RF069] Cadastrar despesas por Safra 20
-2.9 Modulo RH 20
 [RF070] Cadastro de Salários 20
 [RF071] Pagamento de férias 20
 [RF072] Pagamento de Gratificação 20
