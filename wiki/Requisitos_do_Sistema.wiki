@@ -31,35 +31,34 @@
 ||1.4 Prioridade dos Requisitos||
 ||1.5 Perfis de Usuários pré-definidos||
 ||2 Requisitos Funcionais||
-||2.1 Modulo de Autenticação e Autorização||
-||[RF001] Autenticar Usuário||
-||[RF002] Autorizar Usuário||
-||2.2 Modulo Administrativo||
-||[RF003] Cadastrar Usuário||
-||[RF004] Cadastrar Perfil||
-||[RF005] Alterar Status do Usuário||
-||[RF006] Alterar Perfil||
-||[RF007] Cadastrar Safra||
-||2.3 Modulo Cadastros||
-||[RF008] Escolher Safra||
-[RF009] Cadastrar Talhão 10
-[RF010] Cadastrar Centro de Custo 11
-[RF011] Cadastrar Ciclo de Produção 11
-[RF012] Cadastrar Cultura 11
-[RF013] Cadastrar Variedades de Cultura 11
-[RF014] Cadastrar Armazém de Grãos 11
-[RF015] Cadastrar Silo de Armazenagem de Grãos 11
-[RF016] Cadastrar Pessoas 11
-[RF017] Cadastrar Faturados 12
-[RF018] Cadastrar Insumos 12
-[RF019] Cadastrar Unidades – Pesos e Medidas 12
-[RF020] Cadastrar Categoria de Insumos 12
-[RF021] Cadastrar Maquinas 12
-[RF022] Cadastrar Tipo de Maquinas 12
-[RF023] Cadastrar Tabela de Umidade 12
-[RF024] Cadastrar Tipos de Estoque 13
-AgroProdutor – Sistema de Gestão Agropecuária - 3
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
+||*2.1 Modulo de Autenticação e Autorização*||
+||RF001 Autenticar Usuário||
+||RF002 Autorizar Usuário||
+||*2.2 Modulo Administrativo*||
+||RF003 Cadastrar Usuário||
+||RF004 Cadastrar Perfil||
+||RF005 Alterar Status do Usuário||
+||RF006 Alterar Perfil||
+||RF007 Cadastrar Safra||
+||*2.3 Modulo Cadastros*||
+||RF008 Escolher Safra||
+||RF009 Cadastrar Talhão||
+||RF010 Cadastrar Centro de Custo||
+||RF011 Cadastrar Ciclo de Produção||
+||RF012 Cadastrar Cultura||
+||RF013 Cadastrar Variedades de Cultura||
+||RF014 Cadastrar Armazém de Grãos||
+||RF015 Cadastrar Silo de Armazenagem de Grãos||
+||RF016 Cadastrar Pessoas||
+||RF017 Cadastrar Faturados||
+||RF018 Cadastrar Insumos||
+||RF019 Cadastrar Unidades – Pesos e Medidas||
+||RF020 Cadastrar Categoria de Insumos||
+||RF021 Cadastrar Maquinas||
+||RF022 Cadastrar Tipo de Maquinas||
+||RF023 Cadastrar Tabela de Umidade||
+||RF024 Cadastrar Tipos de Estoque||
+
 [RF025] Cadastrar Tipos de Atividades 13
 [RF026] Cadastrar Motoristas Fretistas 13
 [RF027] Cadastrar Caminhões Fretistas 13
