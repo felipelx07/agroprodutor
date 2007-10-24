@@ -108,74 +108,65 @@
 ||RF067 Cadastrar despesas por Talhão||
 ||RF068 Cadastrar despesas por Ciclo de Produção||
 ||RF069 Cadastrar despesas por Safra||
-||2.9 Modulo RH 20||
+||2.9 Modulo RH||
+||RF070] Cadastro de Salários||
+||RF071] Pagamento de férias||
+||RF072] Pagamento de Gratificação||
+||RF073] Cadastro de Gratificação||
+||RF074] Lançamento de Débitos Mensais||
+||RF075] Lançamento de créditos Mensais||
+||3.0 Modulo Relatórios||
+||RF076] Utilização de Insumos por Talhão||
+||RF077] Utilização de Insumos por Ciclo de Produção||
+||RF078] Utilização de Insumos X Custo||
+||RF079] Utilização de Insumos X Quantidade||
+||RF080] Utilização de Maquinas por Talhão||
+||RF081] Utilização de Maquinas por Ciclo de Produção||
+||RF082] Utilização de Maquinas por Custo||
+||RF083] Utilização de Maquinas X Quantidade||
+||RF084] Extrato de Despesas por Talhão||
+||RF085] Extrato de Despesas por Ciclo de Produção||
+||RF086] Extrato de Despesas por Custo||
+||RF087] Extrato de Despesas X Talhão||
+||RF088] Extrato Estoque Grãos||
+||RF089] Extrato de Entrada de Grãos||
+||RF090] Extrato Produtividade||
+||RF091] Extrato Motorista Fretista||
+||RF092] Extrato vendas de Grãos||
+||RF093] Extrato Venda de Maquinas||
+||RF094] Extrato Venda de Insumos||
+||RF095] Extrato saída de Grãos||
+||RF096] Extrato saída Grãos-Diário||
+||RF097] Extrato Manutenção Geral||
+||RF098] Cadastro Manutenção||
+||RF099] Formulário Manutenção Fazenda||
+||RF100] Balanço Geral||
+||RF101] Extrato Contas a Pagar||
+||RF102] Extrato Contas a Receber||
+||RF103] Extrato Bancos||
+||RF104] Extrato Compras Insumos||
+||RF105] Extrato Estoque Insumos||
+||RF106] Extrato empréstimos Insumos||
+||RF107] Extrato Troca Insumos||
+||RF108] Extrato Venda de Insumos||
+||RF109] Demonstrativo Transferência de Insumos||
+||RF110] Demonstrativo Transferência de Grãos||
+||RF111] Extrato Devolução de Insumos||
+||3. Requisitos Não Funcionais||
+||RNF01] Usabilidade||
+||RNF02] Confiabilidade||
+||RNF03] Segurança de Acesso||
+||RNF04] Criptografia||
+||RNF05] Suporte Técnico||
+||RNF06] Ajuda||
+||RNF07] Portabilidade||
 
-[RF070] Cadastro de Salários 20
-[RF071] Pagamento de férias 20
-[RF072] Pagamento de Gratificação 20
-[RF073] Cadastro de Gratificação 20
-[RF074] Lançamento de Débitos Mensais 20
-[RF075] Lançamento de créditos Mensais 21
-3.0 Modulo Relatórios 21
-[RF076] Utilização de Insumos por Talhão 21
-[RF077] Utilização de Insumos por Ciclo de Produção 21
-[RF078] Utilização de Insumos X Custo 21
-[RF079] Utilização de Insumos X Quantidade 21
-[RF080] Utilização de Maquinas por Talhão 21
-[RF081] Utilização de Maquinas por Ciclo de Produção 22
-[RF082] Utilização de Maquinas por Custo 22
-[RF083] Utilização de Maquinas X Quantidade 22
-[RF084] Extrato de Despesas por Talhão 22
-[RF085] Extrato de Despesas por Ciclo de Produção 22
-[RF086] Extrato de Despesas por Custo 22
-[RF087] Extrato de Despesas X Talhão 22
-[RF088] Extrato Estoque Grãos 22
-[RF089] Extrato de Entrada de Grãos 23
-[RF090] Extrato Produtividade 23
-[RF091] Extrato Motorista Fretista 23
-AgroProdutor – Sistema de Gestão Agropecuária - 5
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF092] Extrato vendas de Grãos 23
-[RF093] Extrato Venda de Maquinas 23
-[RF094] Extrato Venda de Insumos 23
-[RF095] Extrato saída de Grãos 23
-[RF096] Extrato saída Grãos-Diário 24
-[RF097] Extrato Manutenção Geral 24
-[RF098] Cadastro Manutenção 24
-[RF099] Formulário Manutenção Fazenda 24
-[RF100] Balanço Geral 23
-[RF101] Extrato Contas a Pagar 24
-[RF102] Extrato Contas a Receber 24
-[RF103] Extrato Bancos 25
-[RF104] Extrato Compras Insumos 25
-[RF105] Extrato Estoque Insumos 25
-[RF106] Extrato empréstimos Insumos 25
-[RF107] Extrato Troca Insumos 25
-[RF108] Extrato Venda de Insumos 25
-[RF109] Demonstrativo Transferência de Insumos 26
-[RF110] Demonstrativo Transferência de Grãos 26
-[RF111] Extrato Devolução de Insumos 26
-3. Requisitos Não Funcionais 26
-[RNF01] Usabilidade 26
-[RNF02] Confiabilidade 26
-[RNF03] Segurança de Acesso 26
-[RNF04] Criptografia 26
-[RNF05] Suporte Técnico 26
-[RNF06] Ajuda 27
-[RNF07] Portabilidade 27
-AgroProdutor – Sistema de Gestão Agropecuária - 6
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-1. Introdução
-Este documento especifica o sistema AGROPRODUTOR, conforme requisitos
-iniciais propostos no Documento de Requisitos Iniciais. A solicitação do sistema, bem como a
-resolução de eventuais dúvidas, é de responsabilidade do cliente GRUPOIVANOFF, denominado
-apenas de cliente.
-1.1 Propósito
-Esta seção tem como intuito delinear os propósitos do documento de especificação
-de requisitos de software, bem como, especificar o público-alvo ao qual foi destinado.
-O documento tem como propósito servir de base para um acordo entre cliente e
-equipe de desenvolvimento, no sentido de especificar as funcionalidades, além das características de
-alto nível que devem ser providas pelo mesmo.
+_*1. Introdução_*
+Este documento especifica o sistema AGROPRODUTOR, conforme requisitos iniciais propostos no Documento de Requisitos Iniciais. A solicitação do sistema, bem como a resolução de eventuais dúvidas, é de responsabilidade do cliente GRUPOIVANOFF, denominado apenas de cliente.
+
+_*1.1 Propósito_*
+Esta seção tem como intuito delinear os propósitos do documento de especificação de  requisitos de software, bem como, especificar o público-alvo ao qual foi destinado. O documento tem como propósito servir de base para um acordo entre cliente e equipe de desenvolvimento, no sentido de especificar as funcionalidades, além das características de alto nível que devem ser providas pelo mesmo.
+
 1.2 Escopo
 Esta seção tem como objetivo a identificação por nome do produto de software a ser
 desenvolvido, definição do escopo do produto (limitando o que o produto deverá fazer) e descrição
