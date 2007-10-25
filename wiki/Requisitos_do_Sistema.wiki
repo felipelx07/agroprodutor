@@ -412,41 +412,48 @@ _*RF015 – Cadastrar Silo de Armazenagem de Grãos*_
 O usuário do sistema poderá cadastrar novos silos de armazenagem. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação e Status.
 Silo de Armazenagem são os locais propriamente onde os grão serão armazenados.
-Um Armazém, pode ter um ou mais silos. Cada silo tem uma capacidade. Assim o produtor tem um
-maior controle onde esta o seu grãos.
-Prioridade: Importante
-[RF16] – Cadastrar Pessoas
+Um Armazém, pode ter um ou mais silos. Cada silo tem uma capacidade. Assim o produtor tem ummaior controle onde esta o seu grãos.
+
+_rioridade: Importante_
+
+_*R016 – Cadastrar Pessoas*_
 O usuário do sistema poderá cadastrar novas pessoas. Para tal, deverão exigir as
-AgroProdutor – Sistema de Gestão Agropecuária - 11
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
 seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
 Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro, Cidade, Estado, CEP),
 Telefone(Tipo,DDD,Numero), status.
 Pessoas é o termo utilizado para o cadastro de fornecedores e clientes, que deverão
 ser utilizados no sistema.
-Prioridade: Importante
-[RF17] – Cadastrar Faturados
+
+
+_Prioridade: Importante_
+
+_*RF017 – Cadastrar Faturados_*
 O usuário do sistema poderá cadastrar novos faturados. Para tal, deverão exigir as
 seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
 Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro, Cidade, Estado, CEP),
 Telefone(Tipo, DDD, Numero), status.
 Faturado é o termo utilizado para emissão de notas fiscais, nas eventuais compras de
 insumos, compras de peças,...
-Prioridade: Importante
-[RF18] – Cadastrar Insumos
+
+_Prioridade: Importante_
+
+_*RF018 – Cadastrar Insumos*_
 O usuário do sistema poderá cadastrar novos Insumos. Para tal, deverão exigir as
-seguintes informações básicas: Descrição, TipoInsumo, Categoria, Unidade de Medida, Estoque
-Minimo, Observação, ValorMedio(Valor,Safra)e status.
+seguintes informações básicas: Descrição, TipoInsumo, Categoria, Unidade de Medida, Estoque Minimo, Observação, ValorMedio(Valor,Safra)e status.
 O tipo de insumo é dado de 6 formas: Defensivos, Sementes, Fertilizantes, Peças,
 Óleos e Filtros.
-Prioridade: Importante
-[RF19] – Cadastrar Unidades – Pesos e Medidas
+
+_Prioridade: Importante_
+
+_*RF019 – Cadastrar Unidades – Pesos e Medidas_*
 O usuário do sistema poderá cadastrar novas unidades. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Observação, Status.
 Unidades é o termo utilizado para definir em que medida um insumo vai ser
 utilizado, como por exemplo, em kilos, gramas, doses, toneladas, litros,...
-Prioridade: Importante
-[RF20] – Cadastrar Categoria de Insumos
+
+_Prioridade: Importante_
+
+_*RF020 – Cadastrar Categoria de Insumos*_
 O usuário do sistema poderá cadastrar novas categorias. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Observação, Status.
 Categoria de Insumos é o termo utilizado para classificar o insumo, como por
