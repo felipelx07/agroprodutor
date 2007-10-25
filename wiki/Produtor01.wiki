@@ -1,70 +1,70 @@
 #Resultado da Pesquisa com o Produtor 01
 
-*Nome:*
+*1-Nome:*
 Preservou o direito de não publicar o nome
 
-*Idade:*
+*2-Idade:*
 33 Anos
 
-*Quantidade de área plantada:*
+*3-Quantidade de área plantada:*
 1.000 há no estado de Tocantins. 
 
-*Tem Filhos?*
+*4-Tem Filhos?*
 Sim, tenho 3 filhos. A filha mais velha tem 9 anos, a filha do meio tem 3 e o caçula 4 meses.
 
-*Grau de estudo do(s) filho(s)?*
+*5-Grau de estudo do(s) filho(s)?*
 A filha mais velha esta na 8º serie. os demais nao estão na idade escolar.
 
-*Possui computador ?*
+*6-Possui computador ?*
 Sim
 
-*Quantos computadores?*
+*7-Quantos computadores?*
 1 Computador, sendo notebook
 
-*Quantos funcionários abastecem o sistema?*
+*8-Quantos funcionários abastecem o sistema?*
 Não possui sistema de gestão, mas as planilhas eletronicas, eu mesmo faço e abasteço.
 
-*Grau de estudo do proprietário?*
+*9-Grau de estudo do proprietário?*
 Superior Completo – Agronomia
 
-*Conhece Software Livre?*
+*10-Conhece Software Livre?*
 Não
 
-*Já usou software Livre?*
+*11-Já usou software Livre?*
 Acho que não
 
-*Conhece Linux?*
+*12-Conhece Linux?*
 Sim, ja ouvi falar, mas nunca usei
 
-*Já usou Linux?*
+*13-Já usou Linux?*
 Não
 
-*Qual sistema operacional usa?*
+*14-Qual sistema operacional usa?*
 Windows
 
-*Tem um projeto de investimento em informática a curto período?*
+*15-Tem um projeto de investimento em informática a curto período?*
 Não
 
-*Possui sistema de gestão?*
+*16-Possui sistema de gestão?*
 Não. Planto pouca area, e no momento me sinto comodo com as planilhas eletronicas. 
 
-*Esta satisfeito?*
+*17-Esta satisfeito?*
 Não possui sistema de gestão
 
-*É comodato, pago, alugado:*
+*18-É comodato, pago, alugado:*
 Não possui sistema de gestão
 
-*Existe suporte?*
+*19-Existe suporte?*
 Não possui sistema de gestão
 
-*Esta satisfeito com o suporte?*
+*20-Esta satisfeito com o suporte?*
 Não possui sistema de gestão
 
-*Precisou de melhorias?*
+*21-Precisou de melhorias?*
 Não possui sistema de gestão
 
-*O que acha de participar de um projeto de software livre?*
+*22-O que acha de participar de um projeto de software livre?*
 Se for p desenvolver algo que realmente me ajude
 
-*Senão dependesse de dinheiro, o que mais, dificultaria você a participar de um projeto de Swlivre?*
+*23-Senão dependesse de dinheiro, o que mais, dificultaria você a participar de um projeto de Swlivre?*
 Tempo e Disponibilidade de Horário
