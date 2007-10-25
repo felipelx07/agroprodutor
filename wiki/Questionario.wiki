@@ -1,3 +1,4 @@
+#labels Pesquisa_Cenário
 Foi elaborada uma pesquisa junto aos produtores rurais, onde mostrou o cenário atual desta categoria, mostrando resultados interessantes.
 Este pesquisa foi elaborada através de um questionário, onde foram enviadas perguntas para os produtores rurais. Estas perguntas foram enviadas via email.
 Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 retornaram o questionário.
