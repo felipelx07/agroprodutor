@@ -458,45 +458,55 @@ O usuário do sistema poderá cadastrar novas categorias. Para tal, deverão exi
 seguintes informações básicas: Descrição, Observação, Status.
 Categoria de Insumos é o termo utilizado para classificar o insumo, como por
 exemplo, Defensivos são classificados em: Herbicidas, Fungicidas, Inseticidas, ...
-Prioridade: importante
-[RF21] – Cadastrar Maquinas
+
+_Prioridade: importante_
+
+
+_*RF021 – Cadastrar Maquinas*_
 O usuário do sistema poderá cadastrar novas maquinas. Para tal, deverão exigir as
 seguintes: Numero, Descrição, TipoMaquina, AnoFabricação, ValorMercado, ValorSucata,
 HorasUteis, AnoCompra, Horimetro/Kilometro Atual, observação, Status.
-Prioridade: importante
-[RF22] – Cadastrar Tipo de Maquinas
+
+_Prioridade: importante_
+
+_*RF022 – Cadastrar Tipo de Maquinas*_
 O usuário do sistema poderá cadastrar novos tipos de maquinas. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, TipoMarcação, Observação, Status.
 Existe dois tipos de marcação: Horimetro e Kilometrico.
-Prioridade: importante
-[RF23] – Cadastrar Tabela de Umidade
+
+_Prioridade: importante_
+
+_*RF023 – Cadastrar Tabela de Umidade*_
 O usuário do sistema poderá cadastrar novas tabelas de umidades. Para tal, deverão
-AgroProdutor – Sistema de Gestão Agropecuária - 12
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-exigir as seguintes informações básicas: Descrição, Cultura, Dados(Índice, txDesconto), Status.
-Existem vários tipos de Tabela de Umidade. Cada armazém de terceiro, utiliza a sua
+exigir as seguintes informações básicas: Descrição, Cultura, Dados(Índice, txDesconto), Status. Existem vários tipos de Tabela de Umidade. Cada armazém de terceiro, utiliza a sua
 com índices próprios que podem variar de tabela para tabela.
-Prioridade: importante
-[RF24] – Cadastrar Tipos de Estoque
+
+_Prioridade: importante_
+
+_*RF024 – Cadastrar Tipos de Estoque*_
 O usuário do sistema poderá cadastrar novos tipos de estoques. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação, Status.
 Tipo de estoque, é o temo utilizado para definir vários estoques.
-Prioridade: importante
-[RF25] – Cadastrar Tipos de Atividades
+
+_Prioridade: importante_
+
+_*RF025 – Cadastrar Tipos de Atividades*_
 O usuário do sistema poderá cadastrar novos tipos de atividades. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação, Status.
 Tipo de Atividades é a classificação do serviço realizado na lavoura, como por
 exemplo, Plantio, Colheita, Aplicação, Dessecação, ...
-Prioridade: Importante
-[RF26] – Cadastrar Motoristas Fretistas
+
+_Prioridade: Importante_
+
+_*RF026 – Cadastrar Motoristas Fretistas*_
 O usuário do sistema poderá cadastrar novos motoristas fretistas. Para tal, deverão
 exigir as seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
 Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro,. Cidade, Estado, CEP),
-Telefone(Tipo, DDD, Numero), status.
-Motorista Fretista é o termo utilizado para os motorista que transportam os grãos,
-seja da lavoura para armazém, seja de armazém para armazém.
-Prioridade: Importante
-[RF27] – Cadastrar Caminhões Fretistas
+Telefone(Tipo, DDD, Numero), status. Motorista Fretista é o termo utilizado para os motorista que transportam os grãos, seja da lavoura para armazém, seja de armazém para armazém.
+
+_Prioridade: Importante_
+
+_*RF027 – Cadastrar Caminhões Fretistas*_
 O usuário do sistema poderá cadastrar novos caminhões fretistas. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Placa, MotoristaFretista, Status.
 Caminhão Fretista é o termo utilizado para os caminhões que transportam os grãos,
