@@ -27,8 +27,20 @@ Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 r
 ||22|| – O que acha de participar de um projeto de software livre:||
 ||23|| – Senão dependesse de dinheiro, o que mais dificultaria você a participar de um projeto de software livre:||
 
-*Por motivos obvios, os nomes dos produores serão preservados.*
+*Por motivos obvios, os nomes dos produtores serão preservados.*
 
+
+=INTEGRA DA PESQUISA=
+
+||[Produtor01]||
+||[Produtor02]||
+||[Produtor03]||
+||[Produtor04]||
+||[Produtor05]||
+||[Produtor06]||
+||[Produtor07]||
+
+=RESULTADOS  E NUMEROS=
 *Escolaridade*
 Uns dos resultados relevantes foi a média de idade, associada a escolaridade dos produtores, conforme tabela abaixo.
 
