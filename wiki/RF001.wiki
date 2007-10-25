@@ -1,6 +1,0 @@
-Para acessar o sistema, o usuário deverá estar autenticado. 
-Este módulo tem como entrada o nome do usuário e sua senha. Após a encriptação da senha na maquina local, evitando assim que a senha passe em aberto pela rede, os dados serão validados, permitindo ou não acesso do usuário ao sistema. A saída do modulo consiste no perfil e na lista de permissões associada ao usuário autenticado, ou um erro caso o usuário não esteja autenticado.
-
-As tentativas de autenticação deverão ser limitadas a três. Caso ocorram mais de três tentativas invalidas, o status do usuário deverá ser automaticamente modificado para bloqueado, impedindo assim seu futuro acesso ao sistema. Somente o Administrador poderá alterar o status do usuário, permitindo novamente o acesso ao sistema.
-
-Prioridade: Essencial
