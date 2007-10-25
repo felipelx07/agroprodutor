@@ -340,6 +340,7 @@ _Prioridade: Essencial_
 
 
 *2.3 Modulo Cadastros*
+
 Corresponde ao módulo onde a maioria dos cadastros e manutenções de entidades
 serão realizadas. Neste módulo, os usuários devem ter associados o Perfil “Administrativo e Operacional, Cadastro”.
 
@@ -364,12 +365,14 @@ Cada talhão tem um tamanho de área, mas nada impede de o produtor plantar meno
 
 _Prioridade: Importante_
 
+
 _*RF010 – Cadastrar Centro de Custo*_
 O usuário do sistema poderá cadastrar novos Centros de Custo. Para tal, deverão
 exigir as seguintes informações básicas: Descrição e observação.
 Centro de custo, são aglomerações de talhões, localizados próximos fisicamente.
 
 _Prioridade: Importante_
+
 
 _*RF011 – Cadastrar Ciclo de Produção*_
 
@@ -380,6 +383,7 @@ Safra 2007/2008”, que é um ciclo de produção da Cultura de Soja, da Safra 2
 
 _Prioridade: Importante_
 
+
 _*RF012 – Cadastrar Cultura*_
 
 O usuário do sistema poderá cadastrar novas culturas: Para tal, deverão exigir as
@@ -388,6 +392,7 @@ Cultura é o termo usado para determinar que tipo de grão será plantado, como 
 exemplo, Soja, Milho, Girassol, ...
 
 _Prioridade: Importante_
+
 
 _*RF013 – Cadastrar Variedades de Cultura*_
 
@@ -399,6 +404,7 @@ produtividade entre vários tipos de cultura que existem no mercado, com por exe
 
 _Prioridade: Importante_
 
+
 _*RF014 – Cadastrar Armazém de Grãos*_
 
 O usuário do sistema poderá cadastrar novos armazéns. Para tal, deverão exigir as
@@ -408,13 +414,15 @@ armazenado. Existem armazéns, próprios e de terceiros. Ambos são cadastrados 
 
 _Prioridade: Importante_
 
+
 _*RF015 – Cadastrar Silo de Armazenagem de Grãos*_
 O usuário do sistema poderá cadastrar novos silos de armazenagem. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação e Status.
 Silo de Armazenagem são os locais propriamente onde os grão serão armazenados.
 Um Armazém, pode ter um ou mais silos. Cada silo tem uma capacidade. Assim o produtor tem ummaior controle onde esta o seu grãos.
 
-_rioridade: Importante_
+_Prioridade: Importante_
+
 
 _*R016 – Cadastrar Pessoas*_
 O usuário do sistema poderá cadastrar novas pessoas. Para tal, deverão exigir as
@@ -427,7 +435,9 @@ ser utilizados no sistema.
 
 _Prioridade: Importante_
 
+
 _*RF017 – Cadastrar Faturados_*
+
 O usuário do sistema poderá cadastrar novos faturados. Para tal, deverão exigir as
 seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
 Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro, Cidade, Estado, CEP),
@@ -437,7 +447,9 @@ insumos, compras de peças,...
 
 _Prioridade: Importante_
 
+
 _*RF018 – Cadastrar Insumos*_
+
 O usuário do sistema poderá cadastrar novos Insumos. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, TipoInsumo, Categoria, Unidade de Medida, Estoque Minimo, Observação, ValorMedio(Valor,Safra)e status.
 O tipo de insumo é dado de 6 formas: Defensivos, Sementes, Fertilizantes, Peças,
@@ -445,7 +457,9 @@ O tipo de insumo é dado de 6 formas: Defensivos, Sementes, Fertilizantes, Peça
 
 _Prioridade: Importante_
 
+
 _*RF019 – Cadastrar Unidades – Pesos e Medidas_*
+
 O usuário do sistema poderá cadastrar novas unidades. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Observação, Status.
 Unidades é o termo utilizado para definir em que medida um insumo vai ser
@@ -453,7 +467,9 @@ utilizado, como por exemplo, em kilos, gramas, doses, toneladas, litros,...
 
 _Prioridade: Importante_
 
+
 _*RF020 – Cadastrar Categoria de Insumos*_
+
 O usuário do sistema poderá cadastrar novas categorias. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Observação, Status.
 Categoria de Insumos é o termo utilizado para classificar o insumo, como por
@@ -463,34 +479,43 @@ _Prioridade: importante_
 
 
 _*RF021 – Cadastrar Maquinas*_
+
 O usuário do sistema poderá cadastrar novas maquinas. Para tal, deverão exigir as
 seguintes: Numero, Descrição, TipoMaquina, AnoFabricação, ValorMercado, ValorSucata,
 HorasUteis, AnoCompra, Horimetro/Kilometro Atual, observação, Status.
 
 _Prioridade: importante_
 
+
 _*RF022 – Cadastrar Tipo de Maquinas*_
+
 O usuário do sistema poderá cadastrar novos tipos de maquinas. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, TipoMarcação, Observação, Status.
 Existe dois tipos de marcação: Horimetro e Kilometrico.
 
 _Prioridade: importante_
 
+
 _*RF023 – Cadastrar Tabela de Umidade*_
+
 O usuário do sistema poderá cadastrar novas tabelas de umidades. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Cultura, Dados(Índice, txDesconto), Status. Existem vários tipos de Tabela de Umidade. Cada armazém de terceiro, utiliza a sua
 com índices próprios que podem variar de tabela para tabela.
 
 _Prioridade: importante_
 
+
 _*RF024 – Cadastrar Tipos de Estoque*_
+
 O usuário do sistema poderá cadastrar novos tipos de estoques. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação, Status.
 Tipo de estoque, é o temo utilizado para definir vários estoques.
 
 _Prioridade: importante_
 
+
 _*RF025 – Cadastrar Tipos de Atividades*_
+
 O usuário do sistema poderá cadastrar novos tipos de atividades. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Observação, Status.
 Tipo de Atividades é a classificação do serviço realizado na lavoura, como por
@@ -498,7 +523,9 @@ exemplo, Plantio, Colheita, Aplicação, Dessecação, ...
 
 _Prioridade: Importante_
 
+
 _*RF026 – Cadastrar Motoristas Fretistas*_
+
 O usuário do sistema poderá cadastrar novos motoristas fretistas. Para tal, deverão
 exigir as seguintes informações básicas: Razão Social, Fantasia, TipoPessoa, CPF/CNPJ,
 Endereço(TipoLogradouro, Logradouro, Numero, Complemento, Bairro,. Cidade, Estado, CEP),
@@ -506,178 +533,242 @@ Telefone(Tipo, DDD, Numero), status. Motorista Fretista é o termo utilizado par
 
 _Prioridade: Importante_
 
+
 _*RF027 – Cadastrar Caminhões Fretistas*_
+
 O usuário do sistema poderá cadastrar novos caminhões fretistas. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Placa, MotoristaFretista, Status.
 Caminhão Fretista é o termo utilizado para os caminhões que transportam os grãos,
 seja da lavoura para armazém, seja de armazém para armazém.
-Prioridade: Importante
-[RF28] – Cadastrar Rotas de Frete
+
+_Prioridade: Importante_
+
+
+*_RF028 – Cadastrar Rotas de Frete*_
+
 O usuário do sistema poderá cadastrar novas rota de frete. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, TipoCobrança, ValorUnitario, Status.
 Rotas de frete, define o valor e como o frete será pago, seja ele por saca, por kilo,
 por viagem ou por kilometro rodado.
-Prioridade: Importante
-[RF29] – Cadastrar Bancos e Caixas
+
+_Prioridade: Importante_
+
+
+_*RF029 – Cadastrar Bancos e Caixas*_
+
 O usuário do sistema poderá cadastrar novos bancos ou caixas. Para tal, deverão
 exigir as seguintes informações básicas: Descrição, Obervação, Status.
-Prioridade: Importante
-[RF30] – Cadastrar Moeda
+
+_Prioridade: Importante_
+
+
+_*RF030 – Cadastrar Moeda*_
+
 O usuário do sistema poderá cadastrar novas moedas. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, Sifrão, Observação, Status.
-Prioridade: Importante
-AgroProdutor – Sistema de Gestão Agropecuária - 13
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF31] – Cadastrar Despesas
+
+_Prioridade: Importante_
+
+
+_*RF031 – Cadastrar Despesas*_
+
 O usuário do sistema poderá cadastrar novas despesas. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, observação, Status.
-Prioridade: Importante
-[RF32] – Cadastrar Receitas
+
+_Prioridade: Importante_
+
+
+_*RF032 – Cadastrar Receitas*_
+
 O usuário do sistema poderá cadastrar novas receitas. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, observação, Status.
-Prioridade: Importante
-[RF33] – Cadastrar Portador
+
+_Prioridade: Importante_
+
+
+_*RF033 – Cadastrar Portador*_
+
 O usuário do sistema poderá cadastrar novos portadores. Para tal, deverão exigir as
 seguintes informações básicas: Descrição, observação, status.
 Portador é o termo utilizado para classificar o documento que será lançado no
 financeiro. Portador pode ser, Nota Fiscal, Pedido, ...
-Prioridade: importante
-[RF34] – Associar Variedade á Talhão
+
+_Prioridade: importante_
+
+
+_*RF034 – Associar Variedade á Talhão*_
+
 O usuário deverá associar uma variedade, a um talhão, e a um ciclo de produção. No
-momento da associação, deverá ser informado a quantidade de hectares que será utilizada para esta
-variedade. Um talhão pode ser sub-dividido em varias variedades, e/ou vários ciclos de produção.
-Prioridade: Importante
-2.4 Módulo Financeiro
+momento da associação, deverá ser informado a quantidade de hectares que será utilizada para esta variedade. Um talhão pode ser sub-dividido em varias variedades, e/ou vários ciclos de produção.
+
+_Prioridade: Importante_
+
+
+*2.4 Módulo Financeiro*
+
 Através do Modulo Financeiro, será possível o lançamento de contas a pagar, contas
-a receber, pagamento de contas, recebimento de contas, empréstimos, transferência entre bancos,
-enfim, toda a movimentação financeira do produtor rural.
+a receber, pagamento de contas, recebimento de contas, empréstimos, transferência entre bancos,enfim, toda a movimentação financeira do produtor rural.
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
-a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
-autenticado e autorizado, o acesso a cada um dos sub-módulos do financeiro é liberado.
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos do financeiro é liberado.
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF35] – Lançamento de contas a pagar
+
+
+_*RF035 – Lançamento de contas a pagar*_
+
 O sistema possibilita o lançamento de contas a pagar pelo usuário.
 Deverá ser possível em apenas um lançamento, varias parcelas, de diferentes
-valores, e data de vencimentos.
-Também será possível escolher o tipo de correção, Simples ou Capitalizada, e
-também demais correções, do tipo, mora, multa,...
+valores, e data de vencimentos. Também será possível escolher o tipo de correção, Simples ou Capitalizada, e também demais correções, do tipo, mora, multa,...
 Pode ser lançada uma conta com qualquer moeda já cadastrada.
-Prioridade: Importante
-[RF36] - Lançamento de contas a receber
-O sistema possibilita o lançamento de contas a receber pelo usuário.
-Deverá ser possível em apenas um lançamento, varias parcelas, de diferentes
-valores, e data de vencimentos.
-Também será possível escolher o tipo de correção, Simples ou Capitalizada, e
-também demais correções, do tipo, mora, multa,...
-Pode ser lançada uma conta com qualquer moeda já cadastrada.
-Prioridade: Importante
-AgroProdutor – Sistema de Gestão Agropecuária - 14
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF37] – Pagamento de Contas a Pagar
+
+_Prioridade: Importante_
+
+
+_*RF036 - Lançamento de contas a receber*_
+
+O sistema possibilita o lançamento de contas a receber pelo usuário. Deverá ser possível em apenas um lançamento, varias parcelas, de diferentes valores, e data de vencimentos.
+Também será possível escolher o tipo de correção, Simples ou Capitalizada, e também demais correções, do tipo, mora, multa,... Pode ser lançada uma conta com qualquer moeda já cadastrada.
+
+_Prioridade: Importante_
+
+
+_*RF037] – Pagamento de Contas a Pagar*_
+
 O sistema possibilitará o pagamento de contas a pagar que não foram quitadas.
-Possibilitará vários pagamentos de uma mesma parcela, ou agrupar varias parcelas de diferentes
-fornecedores em um só pagamento.
-Pode ser efetuado pagamento, em varias moedas, mas para lançamentos de Bancos,
-deverá ser feito a correção
-Prioridade: Importante
-[RF38] – Recebimento de Contas a Receber.
+Possibilitará vários pagamentos de uma mesma parcela, ou agrupar varias parcelas de diferentes fornecedores em um só pagamento. Pode ser efetuado pagamento, em varias moedas, mas para lançamentos de Bancos, deverá ser feito a correção
+
+_Prioridade: Importante_
+
+
+_*RF038 – Recebimento de Contas a Receber*_
+
 O sistema possibilitará o recebimento de contas a receber que não foram quitadas.
-Possibilitará vários recebimentos de uma mesma parcela, ou agregar varias parcelas de diferentes
-clientes em um só recebimento.
-Pode ser efetuado recebimento, em varias moedas, mas para os lançamentos em
-Bancos, deverá ser feito a correção.
-Prioridade: Importante
-[RF39] – Lançamentos de Débitos Bancários
+Possibilitará vários recebimentos de uma mesma parcela, ou agregar varias parcelas de diferentes clientes em um só recebimento. Pode ser efetuado recebimento, em varias moedas, mas para os lançamentos em Bancos, deverá ser feito a correção.
+
+_Prioridade: Importante_
+
+
+_*RF039 – Lançamentos de Débitos Bancários*_
+
 O sistema possibilitará o lançamentos de débitos, do tipo: taxas bancarias, CPMF e
-IOF.
-Assim o sistema permitirá ao usuário um controle mais eficaz de sua conta corrente.
-Prioridade: Importante
-[RF40] – Lançamentos de créditos Bancários
+IOF. Assim o sistema permitirá ao usuário um controle mais eficaz de sua conta corrente.
+
+_Prioridade: Importante_
+
+
+_*RF040 – Lançamentos de créditos Bancários*_
+
 O sistema possibilitará o lançamentos de créditos, do tipo: resgate de previdência, de
-títulos, ou estorno.
-Assim o sistema permitirá ao usuário um controle mais eficaz de sua conta corrente.
-Prioridade: Importante
-[RF41] – Efetuar conciliação bancaria
+títulos, ou estorno. Assim o sistema permitirá ao usuário um controle mais eficaz de sua conta corrente.
+
+_Prioridade: Importante_
+
+
+_*RF041 – Efetuar conciliação bancaria*_
+
 O controle do saldo bancário de uma conta corrente, será emitido por esta função.
-Todos os lançamentos, seja a credito ou a debito, que já estiverem lançados no extrato bancário
-emitido pela agencia, deverá ser informado ao sistema, possibilitando assim, saber quais
-lançamentos ainda estão pendentes.
-Nesta função o usuário saberá por exemplo, quais cheques emitidos já foram
-descontados no banco e quais ainda não foram apresentados.
-Prioridade: Importante
-2.5 Módulo Grãos
+Todos os lançamentos, seja a credito ou a debito, que já estiverem lançados no extrato bancário emitido pela agencia, deverá ser informado ao sistema, possibilitando assim, saber quais lançamentos ainda estão pendentes. Nesta função o usuário saberá por exemplo, quais cheques emitidos já foram descontados no banco e quais ainda não foram apresentados.
+
+_Prioridade: Importante_
+
+
+*2.5 Módulo Grãos*
+
 Através do Modulo Grãos, será possível a entrada, venda, empréstimos de grãos,
 enfim, toda a movimentação que utiliza o estoque de grãos.
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
-a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
-autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF42] – Entrada de Grãos pela Colheita
+
+
+_*RF042 – Entrada de Grãos pela Colheita*_
+
 O sistema possibilitará a entrada de grãos, oriundos da colheita. Neste sub-módulo
-será descontados possíveis impurezas, do tipo, umidade, ardidos, ... Para tal, deverão exigir as
-seguintes informações básicas: numero do talhão, ciclo de produção, variedade, safra, cultura, peso
-AgroProdutor – Sistema de Gestão Agropecuária - 15
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-bruto e peso liquido.
+será descontados possíveis impurezas, do tipo, umidade, ardidos, ... Para tal, deverão exigir as seguintes informações básicas: numero do talhão, ciclo de produção, variedade, safra, cultura, peso bruto e peso liquido.
 Para cada percentual de umidade, deve seguir a tabela de umidade previamente
-cadastrada.
-È por este sub-módulo que será avaliada a produtividade da colheita.
-Prioridade: Importante
-RF43] – Entrada de Grãos por Empréstimos
+cadastrada. È por este sub-módulo que será avaliada a produtividade da colheita.
+
+_Prioridade: Importante_
+
+_*R0F43 – Entrada de Grãos por Empréstimos*_
+
 O sistema possibilitará a entrada de grãos por empréstimos de terceiros, previamente
-cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, Peso
-Bruto e Peso Liquido.
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, Peso Bruto e Peso Liquido.
 A entrada de grãos por empréstimos não afetará a produtividade.
-Prioridade: Importante
-[RF44] – Comprar Grãos
+
+_Prioridade: Importante_
+
+
+_*RF044 – Comprar Grãos*_
+
 O sistema possibilitará a entrada de grãos por compra de terceiros, previamente
-cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, peso
-bruto e peso liquido.
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, peso bruto e peso liquido.
 A entrada de grãos por compra não afetará a produtividade.
-Prioridade: Importante
-[RF45] – Venda de Grãos
+
+_Prioridade: Importante_
+
+
+_*RF045 – Venda de Grãos*_
+
 O usuário efetuará a venda de grãos, que se caracteriza quando o produtor decide
-vender seu estoque.. Para vender uma certa quantidade de grãos, não é necessário ter a quantidade
-no estoque. Existem vendas feitas antes mesmo de colher o grão, chamada de venda e entrega
-futura.
+vender seu estoque.. Para vender uma certa quantidade de grãos, não é necessário ter a quantidade no estoque. Existem vendas feitas antes mesmo de colher o grão, chamada de venda e entrega futura.
 Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, valor
 unitário, valor total.
-Prioridade: Importante
-[RF46] – Saída de Grãos por Venda
+
+_Prioridade: Importante_
+
+
+_*RF046 – Saída de Grãos por Venda*_
+
 O usuário efetuará a saída de grãos por venda, que se caracteriza pela entrega do
-produto físico. Para fazer a entrega do grãos é necessário ter efetuado a venda de grãos. È
-necessário ter a quantidade no estoque para poder fazer a saída do grão.
+produto físico. Para fazer a entrega do grãos é necessário ter efetuado a venda de grãos. È necessário ter a quantidade no estoque para poder fazer a saída do grão.
 Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade,
 VendadeGraos.
-Prioridade: Importante
-[RF47] – Saída de Grãos por Empréstimos
+
+_Prioridade: Importante_
+
+
+_*RF047 – Saída de Grãos por Empréstimos*_
+
 O usuário efetuará a saída de grãos por empréstimos a terceiros, previamente
-cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, peso
-bruto e peso liquido.
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade, peso bruto e peso liquido.
 Para consolidar o empréstimo é necessário ter a quantidade do grão no estoque.
-Prioridade: Importante
-[RF48] – Saída de Grãos para pagamentos
+
+_Prioridade: Importante_
+
+
+_*RF048 – Saída de Grãos para pagamentos*_
+
 O usuário efetuará a saída de grãos para pagamentos de documentos previamente
-cadastrados no sub-Modulo Contas a Pagar. Para tal, deverão exigir as seguintes informações
-básicas: Cultura, Quantidade de grão, valorpago, CodigoContasAPagar.
+cadastrados no sub-Modulo Contas a Pagar. Para tal, deverão exigir as seguintes informações básicas: Cultura, Quantidade de grão, valorpago, CodigoContasAPagar.
 Para efetuar esta operação, é necessário consultar o saldo do estoque.
-Prioridade: Importante
-[RF49] – Entrada de Grãos por recebimento
-AgroProdutor – Sistema de Gestão Agropecuária - 16
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
+
+_Prioridade: Importante_
+
+
+_*RF049 – Entrada de Grãos por recebimento*_
+
 O usuário efetuará a entrada de grãos por recebimento de documentos previamente
-cadastrados no sub-modulo Contas a Receber. Para tal, deverão exigir as seguintes informações
-básicas: Cultura, quantidade de grãos, valorrecebido, CodigoContasAReceber.
+cadastrados no sub-modulo Contas a Receber. Para tal, deverão exigir as seguintes informações básicas: Cultura, quantidade de grãos, valorrecebido, CodigoContasAReceber.
 Após efetuar esta operação, o saldo do estoque de grãos será atualizado.
-Prioridade: Importante
-[RF50] – Transferência de Grãos entre Armazém
+
+_Prioridade: Importante_
+
+
+_*RF050 – Transferência de Grãos entre Armazém*_
+
 O usuário efetuará a transferência de grãos entre armazéns previamente cadastrados.
 No armazém de saída dos grãos deverá ser consultado o estoque. Após a efetivação da
 transferência, o saldo do estoque de grãos deverá ser atualizado.
-Prioridade: Importante
-2.6 Módulo Insumos
+
+_Prioridade: Importante_
+
+
+*2.6 Módulo Insumos*
+
 Através do Modulo Insumos, será possível a entrada, venda, empréstimos de
 sementes, fertilizantes,. defensivos, enfim, toda a movimentação que utiliza o estoque de insumos.
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
