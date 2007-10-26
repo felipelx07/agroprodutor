@@ -1196,185 +1196,331 @@ _Prioridade: Desejável_
 
 
 _*RF090 – Extrato Produtividade*_
+
 O usuário poderá solicitar um relatório de produtividade, onde mostra a quantidade
 de grãos colhidos agrupados por talhão.
-Prioridade: Desejável
-[RF91] – Extrato Motorista Fretista
+
+_Prioridade: Desejável_
+
+
+_*RF091 – Extrato Motorista Fretista*_
+
 O usuário poderá solicitar um relatório das cargas com os pesos brutos que um
 determinado fretista transportou, para pagar pelo frete.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as viagens por data.
+
 • Sintético: Mostra o somatório agrupado por cultura e rota.
-Prioridade: Desejável
-[RF92] – Extrato vendas de Grãos
+
+_Prioridade: Desejável_
+
+
+_*RF092 – Extrato vendas de Grãos*_
+
 O usuário poderá solicitar um relatório de todas as vendas efetuadas em uma
 determinada safra.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as vendas efetuadas
+
 • Sintético: Mostra o somatório agrupado por cultura e o cliente que comprou.
-Prioridade: Desejável
-[RF93] – Extrato Venda de Maquinas
+
+_Prioridade: Desejável_
+
+
+_*RF093 – Extrato Venda de Maquinas*_
+
 O usuário poderá solicitar um relatório de todas as vendas de maquinas em uma
 determinada safra.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as vendas efetuadas
+
 • Sintético: Mostra o somatório agrupado por cliente que comprou.
-Prioridade: Desejável
-[RF94] – Extrato Venda de Insumos
+
+_Prioridade: Desejável_
+
+
+_*RF094 – Extrato Venda de Insumos*_
+
 O usuário poderá solicitar um relatório de todas as vendas de insumos em uma
 determinada safra.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as vendas efetuadas
+
 • Sintético: Mostra o somatório agrupado por insumos e cliente que comprou.
-Prioridade: Desejável
-[RF95] – Extrato saída de Grãos
+
+_Prioridade: Desejável_
+
+
+_*RF095 – Extrato saída de Grãos*_
+
 O usuário poderá solicitar um relatório de todas as saídas de grãos, associada a sua
 respectivas venda.
+
 O usuário poderá escolher dois modos de visualização:
-AgroProdutor – Sistema de Gestão Agropecuária - 23
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
+
 • Analítico: Mostra todas as saídas efetuadas.
+
 • Sintético: Mostra o somatório agrupado por cultura e venda.
-Prioridade: Desejável
-[RF96] – Extrato saída Grãos-Diário
+
+_Prioridade: Desejável_
+
+
+_*RF096 – Extrato saída Grãos-Diário*_
+
 O usuário poderá solicitar um relatório que mostra o saldo do dia anterior, e todas as
 saídas efetuadas em um dia especifico, de todas as culturas, atualizando o saldo.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as saídas efetuadas, agrupadas por cultura.
+
 • Sintético: Mostra o somatório agrupado por cultura, saldo anterior e saldo
 atual..
-Prioridade: Desejável
-[RF97] – Extrato Manutenção Geral
+
+_Prioridade: Desejável_
+
+
+_*RF097 – Extrato Manutenção Geral*_
+
 O usuário poderá solicitar um relatório que mostra todas as manutenções efetuadas
 nas maquinas agrícolas
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as manutenções efetuadas.
+
 • Sintético: Mostra o somatório agrupado por maquina.
-Prioridade: Desejável
-[RF98] – Cadastro Manutenção
+
+_Prioridade: Desejável_
+
+_*RF098 – Cadastro Manutenção*_
+
 O usuário poderá solicitar um relatório para visualizar quais itens de manutenção
 estão associados a quais maquinas, e qual a vida útil de cada item de manutenção.
-Prioridade: Desejável
-[RF99] – Formulário Manutenção Fazenda
+
+_Prioridade: Desejável_
+
+
+_*RF099 – Formulário Manutenção Fazenda*_
+
 O usuário poderá imprimir um formulário, onde consta as maquinas que tem itens
-de manutenção vencidos, e que os mesmos devem ser substituídos. Neste formulário o funcionário
-responsável pela manutenção, deverá preencher e devolver o formulário.
-Prioridade: Desejável
-[RF100] – Balanço Geral
+de manutenção vencidos, e que os mesmos devem ser substituídos. Neste formulário o funcionário responsável pela manutenção, deverá preencher e devolver o formulário.
+
+_Prioridade: Desejável_
+
+_*RF100 – Balanço Geral*_
+
 O usuário poderá solicitar um relatório onde monstra todas os valores totais das
-despesas, dos insumos, das manutenções, da produtividade, do valor médio obtido pela venda de
-grãos agrupados por talhão. Neste relatório, poderá saber qual talhão deu mais lucro, qual teve mais
-prejuízo
-Prioridade: Essencial
-[RF101] – Extrato Contas a Pagar
+despesas, dos insumos, das manutenções, da produtividade, do valor médio obtido pela venda de grãos agrupados por talhão. Neste relatório, poderá saber qual talhão deu mais lucro, qual teve mais prejuízo
+
+_Prioridade: Essencial_
+
+
+_*RF101 – Extrato Contas a Pagar*_
+
 O usuário poderá solicitar um relatório onde mostra todos os compromissos à pagar
-ainda em aberto, seja vencidos, como a vencer. Neste relatório, os compromissos vencidos, serão
-gerados, acréscimos e multas, se houver. Os compromissos em outras moedas, serão convertidos
-para obter o valor em REAL.
+ainda em aberto, seja vencidos, como a vencer. Neste relatório, os compromissos vencidos, serão gerados, acréscimos e multas, se houver. Os compromissos em outras moedas, serão convertidos para obter o valor em REAL.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todos os compromissos.
+
 • Sintético: Mostra o somatório agrupado por fornecedor.
-Prioridade: Desejável
-[RF102] – Extrato Contas a Receber
+
+_Prioridade: Desejável_
+
+
+_*RF102 – Extrato Contas a Receber*_
+
 O usuário poderá solicitar um relatório onde mostra todos os compromissos à
-receber ainda em aberto, seja vencidos, como a vencer. Neste relatório, os compromissos vencidos,
-AgroProdutor – Sistema de Gestão Agropecuária - 24
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-serão gerados, acréscimos e multas, se houver. Os compromissos em outras moedas, serão
-convertidos para obter o valor em REAL.
+receber ainda em aberto, seja vencidos, como a vencer. Neste relatório, os compromissos vencidos, serão gerados, acréscimos e multas, se houver. Os compromissos em outras moedas, serão convertidos para obter o valor em REAL.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todos os compromissos.
+
 • Sintético: Mostra o somatório agrupado por cliente.
-Prioridade: Desejável
-[RF103] – Extrato Bancos
+
+_Prioridade: Desejável_
+
+
+_*RF103 – Extrato Bancos*_
+
 O usuário poderá solicitar um relatório onde mostra todos os lançamentos efetuados,
 para obter assim o saldo de alguma conta bancaria.
-Prioridade: Desejável
-[RF104] – Extrato Compras Insumos
+
+_Prioridade: Desejável_
+
+
+_*RF104 – Extrato Compras Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todas as compras de insumos,
 efetuadas em uma determinada safra.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todos as compras de insumos.
+
 • Sintético: Mostra o somatório agrupado por insumos e fornecedor.
-Prioridade: Desejável
-[RF105] – Extrato Estoque Insumos
+
+_Prioridade: Desejável_
+
+
+_*RF105 – Extrato Estoque Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todos as movimentações do
 estoque de insumos, detalhando, compra, empréstimo, devolução e utilização.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todos as movimentações por data, agrupada por insumo.
+
 • Sintético: Mostra o somatório agrupado por insumos e o saldo atual.
-Prioridade: Desejável
-[RF106] – Extrato empréstimos Insumos
+
+_Prioridade: Desejável_
+
+_*RF106 – Extrato empréstimos Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todos os empréstimos de
 insumos, seja como entrada, bem como saída.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todos os empréstimos por data.
+
 • Sintético: Mostra o somatório agrupado por insumos.
-Prioridade: Desejável
-[RF107] – Extrato Troca Insumos
+
+_Prioridade: Desejável_
+
+
+_*RF107 – Extrato Troca Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todas as trocas de insumos, seja
 como entrada, bem como saída.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as trocas por data.
+
 • Sintético: Mostra o somatório agrupado por insumos.
-Prioridade: Desejável
-[RF108] – Extrato Venda de Insumos
+
+_Prioridade: Desejável_
+
+_*RF108 – Extrato Venda de Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todas as vendas de insumos.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as venda por data e cliente.
+
 • Sintético: Mostra o somatório agrupado por insumos e cliente.
-Prioridade: Desejável
-AgroProdutor – Sistema de Gestão Agropecuária - 25
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF109] – Demonstrativo Transferência de Insumos
+
+_Prioridade: Desejável_
+
+
+_*RF109 – Demonstrativo Transferência de Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todas as transferência de
 insumos entre estoques.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as transferência por data.
+
 • Sintético: Mostra o somatório agrupado por insumos e estoque.
-Prioridade: Desejável
-[RF110] – Demonstrativo Transferência de Grãos
+
+_Prioridade: Desejável_
+
+
+_*RF110 – Demonstrativo Transferência de Grãos*_
+
 O usuário poderá solicitar um relatório onde mostra todas as transferência de
 insumos entre estoques.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as transferência por data.
+
 • Sintético: Mostra o somatório agrupado por insumos e estoque.
-Prioridade: Desejável
-[RF111] – Extrato Devolução de Insumos
+
+_Prioridade: Desejável_
+
+_*RF111 – Extrato Devolução de Insumos*_
+
 O usuário poderá solicitar um relatório onde mostra todas as devoluções de insumos
 efetuadas em uma safra especifica.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as devoluções por data.
+
 • Sintético: Mostra o somatório agrupado por insumos e fornecedor.
-Prioridade: Desejável
-3. REQUISITOS NÃO FUNCIONAIS
+
+_Prioridade: Desejável_
+
+
+*3. REQUISITOS NÃO FUNCIONAIS*
+
 Aqui serão tratados os requisitos não funcionais do sistema. Para uma melhor
 organização deste documento, os requisitos serão descritos em subseções:
-[RNF01] – Usabilidade
+
+_*RNF01 – Usabilidade*_
+
 O sistema deverá oferecer uma interface amigável, de fácil acesso e aprendizado,
 levando em consideração diferentes níveis sociais, culturais e econômicos dos futuros usuários.
-Prioridade: Importante
-[RNF02] – Confiabilidade
+
+_Prioridade: Importante_
+
+
+_*RNF02 – Confiabilidade*_
+
 O processamento das informações de entrada, assim como os resultados exibidos
 pelos diversos relatórios, devem sempre estar corretos e confiáveis.
-Prioridade: Essencial
-[RNF03] – Segurança de Acesso
+
+_Prioridade: Essencial_
+
+
+_*RNF03 – Segurança de Acesso*_
+
 É desejável que o sistema possua controle de acesso às suas funcionalidades de
 acordo com o perfil do usuário. Para todos os usuários será necessário efetuar o login do sistema.
-Prioridade: Essencial
-[RNF04] – Criptografia
+
+_Prioridade: Essencial_
+
+
+_*RNF04] – Criptografia*_
+
 É desejável que os dados confidenciais deverão ser criptografados para
 armazenamento.
-Prioridade: Importante
-[RNF05] – Suporte Técnico
+
+_Prioridade: Importante_
+
+
+_*RNF05 – Suporte Técnico*_
+
 O sistema deverá conter meios para que os usuários, quando tiverem alguma duvida,
-AgroProdutor – Sistema de Gestão Agropecuária - 26
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
 problema, bug, etc, dispor de um suporte técnico no uso do Sistema.
-Prioridade: Importante
-[RNF06] – Ajuda
+
+_Prioridade: Importante_
+
+
+_*RNF06 – Ajuda*_
+
 O sistema deverá conter dicas on-line e em tempo real sobre o funcionamento do
 sistema a todos os usuários.
-Prioridade: Desejável
-[RNF07] – Portabilidade
+
+_Prioridade: Desejável_
+
+
+_*RNF07 – Portabilidade*_
+
 O sistema deverá rodar
