@@ -1523,4 +1523,6 @@ _Prioridade: Desejável_
 
 _*RNF07 – Portabilidade*_
 
-O sistema deverá rodar
+O sistema deverá rodar em windows e linux, sem a necessidade de uma nova versão.
+
+_Prioridade: Essencial_
