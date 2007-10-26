@@ -975,131 +975,223 @@ Operacional”.
 
 
 _*RF070 – Cadastro de Salários*_
+
 O usuário deverá cadastrar um salário base para cada funcionário.
-Prioridade: Importante
-[RF71] – Pagamento de férias
+
+_Prioridade: Importante_
+
+
+_*RF071 – Pagamento de férias*_
+
 O usuário deverá cadastrar o mês que o funcionário ira receber e/ou gozar férias. Se
-o funcionário não for gozar as férias, o sistema deverá calcular automaticamente o saldo de salário
-mensal mais o valor liquido das férias.
-Prioridade: Importante
-[RF72] – Pagamento de Gratificação
+o funcionário não for gozar as férias, o sistema deverá calcular automaticamente o saldo de salário mensal mais o valor liquido das férias.
+
+_Prioridade: Importante_
+
+
+_*RF072 – Pagamento de Gratificação*_
+
 No mês de recebimento, o sistema deverá multiplicar a quantidade de gratificação
-com o valor do índice Por exemplo. Funcionário X, recebe 100 sacas de soja por ano. No momento
-do pagamento da gratificação, o usuário deverá informar o valor da saca de soja, o sistema calculará
-o valor em reais.O funcionário poderá escolher receber em uma ou varias parcelas a gratificação.
-Prioridade: Importante
-[RF73] – Cadastro de Gratificação
+com o valor do índice Por exemplo. Funcionário X, recebe 100 sacas de soja por ano. No momento do pagamento da gratificação, o usuário deverá informar o valor da saca de soja, o sistema calculará o valor em reais.O funcionário poderá escolher receber em uma ou varias parcelas a gratificação.
+
+_Prioridade: Importante_
+
+
+_*RF073 – Cadastro de Gratificação*_
+
 O usuário deverá cadastrar o valor da gratificação anual. Esta gratificação poderá ser
 cadastrada em qualquer moeda (Real, Soja, ...).
-Prioridade: Importante
-[RF74] – Lançamento de Débitos Mensais
+
+_Prioridade: Importante_
+
+
+_*RF074 – Lançamento de Débitos Mensais*_
+
 O usuário deverá lançar os débitos mensais de cada funcionário. Esses débitos se
 caracterizam como, convênio com farmácias, mercados, e outros. Também poderão ser lançados
-AgroProdutor – Sistema de Gestão Agropecuária - 20
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
 débitos que serão descontados em vários meses.
-Prioridade: Importante
-[RF75] – Lançamento de créditos Mensais
+
+_Prioridade: Importante_
+
+
+_*RF075 – Lançamento de créditos Mensais*_
+
 O usuário deverá lançar os créditos mensais de cada funcionário. Esses créditos se
-caracterizam como, estornos de débitos, repasse de outros funcionários, e outros. Também poderão
-ser lançados créditos que serão creditados em vários meses.
-Prioridade:
-2.10 Modulo Relatórios
+caracterizam como, estornos de débitos, repasse de outros funcionários, e outros. Também poderão ser lançados créditos que serão creditados em vários meses.
+
+_Prioridade: Importante_
+
+
+*2.10 Modulo Relatórios*
+
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF76] – Utilização de Insumos por Talhão
+
+_*RF076 – Utilização de Insumos por Talhão*_
+
 O usuário poderá solicitar um relatório onde mostra todos os insumos aplicados em
-um talhão especifico, mostrando a quantidade, e o valor total aplicado. Para poder escolher, o
-talhão, primeiro deverá escolher o ciclo de produção.
+um talhão especifico, mostrando a quantidade, e o valor total aplicado. Para poder escolher, o talhão, primeiro deverá escolher o ciclo de produção.
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada aplicação de insumos, com sua data e quantidade;
+
 • Sintético: Mostra o somatório de cada insumo, com seu montante e seu valor
 total.
-Prioridade: Desejável
-[RF77] – Utilização de Insumos por Ciclo de Produção
+
+_Prioridade: Desejável_
+
+
+_*RF077 – Utilização de Insumos por Ciclo de Produção*_
+
 O usuário poderá solicitar um relatório onde mostra todos os insumos aplicados em
-um ciclo de produção especifico. Este relatório deverá mostrar agrupadamente, cada talhão que faz
-parte desse ciclo de produção, com um somatório no final.
+um ciclo de produção especifico. Este relatório deverá mostrar agrupadamente, cada talhão que faz parte desse ciclo de produção, com um somatório no final.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada aplicação de insumos, com sua data e quantidade;
+
 • Sintético: Mostra o somatório de cada insumo, com seu montante e seu valor
 total.
-Prioridade: Desejável
-[RF78] – Utilização de Insumos X Custo
+
+_Prioridade: Desejável_
+
+
+_*RF078 – Utilização de Insumos X Custo*_
+
 O usuário poderá solicitar um relatório onde mostra todos os talhões agrupados por
 ciclo de produção, com coluna de tamanho, e valor total dos insumos utilizados.
-Prioridade: Desejável
-[RF79] – Utilização de Insumos X Quantidade
+
+_Prioridade: Desejável_
+
+
+_*RF079 – Utilização de Insumos X Quantidade*_
+
 O usuário poderá solicitar um relatório onde mostra onde um determinado insumo
 foi utilizado e sua quantidade por hectare.
-Prioridade: Desejável
-[RF80] – Utilização de Maquinas por Talhão
-O usuário poderá solicitar um relatório onde mostra todas maquinas que
-trabalharam em um talhão especifico, mostrando a quantidade, e o valor total trabalhado. Para poder
+
+_Prioridade: Desejável_
+
+
+_*RF080 – Utilização de Maquinas por Talhão*_
+
+O usuário poderá solicitar um relatório onde mostra todas maquinas que trabalharam em um talhão especifico, mostrando a quantidade, e o valor total trabalhado. Para poder
 escolher, o talhão, primeiro deverá escolher o ciclo de produção.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada maquina trabalhada, com sua data e quantidade de horas;
+
 • Sintético: Mostra o somatório de cada maquina, com o montante de horas
 trabalhadas e seu valor total.
-Prioridade: Desejável
-AgroProdutor – Sistema de Gestão Agropecuária - 21
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF81] – Utilização de Maquinas por Ciclo de Produção
+
+_Prioridade: Desejável_
+
+
+_*RF081 – Utilização de Maquinas por Ciclo de Produção*_
+
 O usuário poderá solicitar um relatório onde mostra todas as maquinas que
-trabalharam em um ciclo de produção especifico. Este relatório deverá mostrar agrupadamente,
-cada talhão que faz parte desse ciclo de produção, com um somatório no final.
+trabalharam em um ciclo de produção especifico. Este relatório deverá mostrar agrupadamente, cada talhão que faz parte desse ciclo de produção, com um somatório no final.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada maquina trabalhada, com sua data e quantidade de horas;
+
 • Sintético: Mostra o somatório de cada maquina, com o montante de horas
 trabalhadas e seu valor total.
-Prioridade: Desejável
-[RF82] – Utilização de Maquinas por Custo
+
+_Prioridade: Desejável_
+
+
+_*RF082 – Utilização de Maquinas por Custo*_
+
 O usuário poderá solicitar um relatório onde mostra todos os talhões agrupados por
 ciclo de produção, com coluna de tamanho, e valor total e quantidades de horas trabalhadas.
-Prioridade: Desejável
-[RF83] – Utilização de Maquinas X Quantidade
+
+_Prioridade: Desejável_
+
+
+_*RF083 – Utilização de Maquinas X Quantidade*_
+
 O usuário poderá solicitar um relatório onde mostra onde uma determinada maquina
 trabalhou, quantidade de horas agrupadas e sua quantidade por hectare.
-Prioridade: Desejável
-[RF84] – Extrato de Despesas por Talhão
+
+_Prioridade: Desejável_
+
+
+_*RF084 – Extrato de Despesas por Talhão*_
+
 O usuário poderá solicitar um relatório onde mostra todas as despesas alocadas para
 um determinado talhão.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada despesa, com sua data e valor.
+
 • Sintético: Mostra o somatório agrupado por despesa e seu valor total.
-Prioridade: Desejável
-[RF85] – Extrato de Despesas por Ciclo de Produção
+
+_Prioridade: Desejável_
+
+
+_*RF085 – Extrato de Despesas por Ciclo de Produção*_
+
 O usuário poderá solicitar um relatório onde mostra todas as despesas alocadas para
 um determinado ciclo de produção.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada despesa, com sua data e valor.
+
 • Sintético: Mostra o somatório agrupado por despesa e seu valor total.
-Prioridade: Desejável
-[RF86] – Extrato de Despesas por Custo
+
+_Prioridade: Desejável_
+
+
+_*RF086 – Extrato de Despesas por Custo*_
+
 O usuário poderá solicitar um relatório onde mostra todas as despesas agrupadas por
 ciclo de produção, com coluna de tamanho do talhão, e valor total das despesas.
-Prioridade: Desejável
-[RF87] – Extrato de Despesas X Talhão
+
+_Prioridade: Desejável_
+
+
+_*RF087 – Extrato de Despesas X Talhão*_
+
 O usuário poderá solicitar um relatório onde mostra onde uma determinada despesa
 foi alocada, mostrando valor e valor por hectares..
-Prioridade: Desejável
-[RF88] – Extrato Estoque Grãos
+
+_Prioridade: Desejável_
+
+
+_*RF088 – Extrato Estoque Grãos*_
+
 O usuário poderá solicitar um relatório de todo o histórico de entrada e saída de
-grãos do estoque, agrupada por insumos
+grãos do estoque, agrupada por insumos.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra cada entrada ou saída de insumo.
-AgroProdutor – Sistema de Gestão Agropecuária - 22
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
+
 • Sintético: Mostra o somatório agrupado por insumo e seu saldo atual.
-Prioridade: Desejável
-[RF89] – Extrato de Entrada de Grãos
+
+_Prioridade: Desejável_
+
+
+_*RF089 – Extrato de Entrada de Grãos*_
+
 O usuário poderá solicitar um relatório de todas as entradas de grãos de uma safra
 especifica.
+
 O usuário poderá escolher dois modos de visualização:
+
 • Analítico: Mostra todas as entradas, com sua data.
+
 • Sintético: Mostra o somatório agrupado grão e seu saldo atual.
-Prioridade: Desejável
-[RF90] – Extrato Produtividade
+
+_Prioridade: Desejável_
+
+
+_*RF090 – Extrato Produtividade*_
 O usuário poderá solicitar um relatório de produtividade, onde mostra a quantidade
 de grãos colhidos agrupados por talhão.
 Prioridade: Desejável
