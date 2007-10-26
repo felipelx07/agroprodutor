@@ -769,151 +769,212 @@ _Prioridade: Importante_
 
 *2.6 Módulo Insumos*
 
-Através do Modulo Insumos, será possível a entrada, venda, empréstimos de
-sementes, fertilizantes,. defensivos, enfim, toda a movimentação que utiliza o estoque de insumos.
+Através do Modulo Insumos, será possível a entrada, venda, empréstimos de sementes, fertilizantes,. defensivos, enfim, toda a movimentação que utiliza o estoque de insumos.
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
-a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
-autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF51] – Compra de Insumos
+
+
+_*RF051 – Compra de Insumos*_
+
 O usuário efetuará a compra de insumos através de pedido ou nota fiscal. Para tal,
-deverão exigir as seguintes informações básicas: Insumo, quantidade, valorunitario, valortotal,
-estoque, npedido.
-O usuário deverá saber, em qual unidade de medida o insumo será utilizado, com
-por exemplo: litro, dose, kilo,...
-Prioridade: Importante
-[ RF52] – Entrada de Insumos por e mpréstimos
-O usuário efetuará a entrada de insumos por empréstimos para terceiros,
-previamente cadastrado. Para tal, deverão exigir as seguintes informações básicas: Insumo,
+deverão exigir as seguintes informações básicas: Insumo, quantidade, valorunitario, valortotal, estoque, npedido. O usuário deverá saber, em qual unidade de medida o insumo será utilizado, com por exemplo: litro, dose, kilo,...
+
+_Prioridade: Importante_
+
+
+_*RF052 – Entrada de Insumos por e mpréstimos*_
+
+O usuário efetuará a entrada de insumos por empréstimos para terceiros, previamente cadastrado. Para tal, deverão exigir as seguintes informações básicas: Insumo,
 quantidade, produtor, estoque.
 Após a efetivação do empréstimo, o estoque de insumos será atualizado.
-Prioridade: Importante
-[RF53] – Troca de Insumos
+
+_Prioridade: Importante_
+
+
+_*RF053 – Troca de Insumos*_
+
 O usuário efetuará a troca de insumos, ou seja, um produto ira sair do estoque e
 outro ira entrar no estoque. Para tal, deverão exigir as seguintes informações básicas:
 InsumoEntrada, QuantidadeEntrada, InsumoSaida, QuantidadeSaida, estoque.
 O insumoEntrada irá entrar no estoque, e o insumoSaida irá sair. A efetivação da
 troca, se dará após consulta do insumoSaida no estoque.
-.Prioridade: Importante
-[RF54] – Saída de Insumos para Lavoura
+
+_Prioridade: Importante_
+
+
+_*RF054 – Saída de Insumos para Lavoura*_
+
 O usuário efetuará a saída de insumos para a lavoura, ou seja, haverá uma aplicação
 de insumos na lavoura. Para tal, deverão exigir as seguintes informações básicas: Insumo,
 quantidade, NumeroTalhão, CicloProdução.
-Prioridade: Importante
-AgroProdutor – Sistema de Gestão Agropecuária - 17
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[ RF55] – Saída de Insumos por e mpréstimos
+
+_Prioridade: Importante_
+
+
+_*RF055 – Saída de Insumos por e mpréstimos*_
 O usuário efetuará a saída de insumos por empréstimos para terceiros, previamente
-cadastrado. Para tal, deverão exigir as seguintes informações básicas: insumo, quantidade, produtor,
-estoque.
-A efetivação da função se dará após, consulta do estoque.
-Prioridade: Importante
-[RF56] – Venda de Insumos
+cadastrado. Para tal, deverão exigir as seguintes informações básicas: insumo, quantidade, produtor, estoque. A efetivação da função se dará após, consulta do estoque.
+
+_Prioridade: Importante_
+
+
+_*RF056 – Venda de Insumos*_
+
 O usuário efetuará a venda de insumos para terceiros, previamente cadastrados. Para
 tal, deverão exigir as seguintes informações básicas: insumo, quantidade, valorunitario, valortotal.
-Prioridade: Importante
-[RF57] – Devolução de Insumos Comprados
+
+_Prioridade: Importante_
+
+
+_*RF057 – Devolução de Insumos Comprados*_
+
 O usuário efetuará a devolução de insumos ao fornecedor. Para tal, deverão exigir as
 seguintes informações básicas: fornecedor, insumo, quantidade, npedido.
 Para efetivação desta função, o estoque deverá ser consultado e o preço unitário, será
 buscado automaticamente através do npedido, no sub-modulo Compras de Insumos.
-Prioridade: Importante
-[RF58] – Transferência de Insumo entre Estoques
+
+_Prioridade: Importante_
+
+
+_*RF058 – Transferência de Insumo entre Estoques*_
+
 O usuário efetuará a transferência de insumos entre estoques. Para tal, deverão exigir
 as seguintes informações básicas: insumo, quantidade, estoqueOrigem, estoqueDestino.
 Para efetivação desta função, o estoqueOrigem, deverá ser consultado.
-Prioridade: Importante
-[RF59] – Transferência de Insumos entre Safra
+
+_Prioridade: Importante_
+
+
+_*RF59 – Transferência de Insumos entre Safra*_
+
 O usuário efetuará a transferência de insumos entre safra. Esta função será
 necessário quando restar insumos no estoque e começar uma nova safra. Com esta função, o
-estoque da safra anterior e zerado e a quantidades e valores unitários passam para a safra atual. Para
-tal, deverão exigir as seguintes informações básicas: insumos, quantidade, safraAnterior.
-Para efetivação desta função, o usuário deverá estar autenticado na safra Nova.
-Prioridade: Importante
-2.7 Modulo Frota
+estoque da safra anterior e zerado e a quantidades e valores unitários passam para a safra atual. Para tal, deverão exigir as seguintes informações básicas: insumos, quantidade, safraAnterior. Para efetivação desta função, o usuário deverá estar autenticado na safra Nova.
+
+_Prioridade: Importante_
+
+
+*2.7 Modulo Frota*
+
 Através do Modulo Frotas, será possível a entrada, venda maquinas e implementos
 agrícolas.
+
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
-a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
-autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamenteautenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF60] – Cadastrar horas maquinas trabalhadas
+
+
+_*RF060 – Cadastrar horas maquinas trabalhadas*_
+
 O usuário cadastrará as horas trabalhadas da maquinas, para contabilizar ao custo da
-lavoura. Cada maquina, tem um custo de hora, automaticamente calculado. Para tal, deverão exigir
-as seguintes informações básicas: maquina, horainicial, horafinal, variedade, numerotalhao,
-cicloProducao.
-Prioridade: Importante
-[RF61] – Cadastrar Manutenção Periódica
-AgroProdutor – Sistema de Gestão Agropecuária - 18
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-Cada maquina, possui itens de manutenção que tem prazo de validade por uso
-conforme o numero de horas trabalhadas. O usuário deverá cadastrar os itens de manutenção
-periódica, bem como o numero de horas do prazo de utilização.
-Quando o prazo de validade por uso de algum item expira, o sistema deverá avisar
-ao usuário.
-Prioridade: Importante
-[RF62] – Efetuar Manutenção Periódica
+lavoura. Cada maquina, tem um custo de hora, automaticamente calculado. Para tal, deverão exigir as seguintes informações básicas: maquina, horainicial, horafinal, variedade, numerotalhao, cicloProducao.
+
+_Prioridade: Importante_
+
+
+_*RF061 – Cadastrar Manutenção Periódica*_
+
+Cada maquina, possui itens de manutenção que tem prazo de validade por uso conforme o numero de horas trabalhadas. O usuário deverá cadastrar os itens de manutenção periódica, bem como o numero de horas do prazo de utilização. Quando o prazo de validade por uso de algum item expira, o sistema deverá avisar ao usuário.
+
+_Prioridade: Importante_
+
+
+_*RF062 – Efetuar Manutenção Periódica*_
+
 O usuário devera efetuar este função, para contabilizar o custo no valor da hora da
-maquina especifica. Para tal, deverão exigir as seguintes informações básicas: numeroMaquina,
-itemManutencao, horimetro.
-Prioridade: Importante
-[RF63] – Abastecimento da Frota
+maquina especifica. Para tal, deverão exigir as seguintes informações básicas: numeroMaquina, itemManutencao, horimetro.
+
+_Prioridade: Importante_
+
+
+_*RF063 – Abastecimento da Frota*_
+
 O usuário devera cadastrar o abastecimento de cada maquina, assim atualizando o
 custo da hora da maquina. Para cada abastecimento, o estoque deverá ser consultado.
-Prioridade: Importante
-[RF64] – Associar Itens de Manutenção com Maquinas
+
+_Prioridade: Importante_
+
+
+_*RF064 – Associar Itens de Manutenção com Maquinas*_
+
 Cada maquina, possui um conjunto de itens de manutenção periódica Cada item,
-tem um prazo de utilizacão Assim, cada maquina, terá uma lista de itens de manutenção periódica e
-quando este expira. A cada nova troca, é substituída o horimetro da troca pelo atual da maquina.
-Prioridade: Importante
-[RF65] – Efetuar Manutenção Complementar
+tem um prazo de utilizacão Assim, cada maquina, terá uma lista de itens de manutenção periódica e quando este expira. A cada nova troca, é substituída o horimetro da troca pelo atual da maquina.
+
+_Prioridade: Importante_
+
+
+_*RF065 – Efetuar Manutenção Complementar*_
+
 Quando não houver uma troca de itens, e apenas um complemento, como por
 exemplo, 1 litro de óleo de motor, isto não afetará no prazo de utilização deste item.
-Prioridade: Importante
-2.8 Modulo Despesas
+
+_Prioridade: Importante_
+
+
+*2.8 Modulo Despesas*
+
 Através do Modulo Despesas, será possível o lançamentos de todas as despesas, que
 serão alocadas a lavoura, que não sejam oriundas de Insumos e nem de Maquinas.
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
-a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
-autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado. 
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF66] – Cadastrar despesas por Variedade de cultura
+
+
+_*RF066 – Cadastrar despesas por Variedade de cultura*_
+
 O usuário deverá cadastrar despesas especificas desta variedade de cultura. Assim, o
-custo desta variedade será atualizado. Para tal, deverão exigir as seguintes informações básicas:
-valorDespesa, variedade, numerotalhao, cicloproducao.
-Prioridade: Importante
-[RF67] – Cadastrar despesas por Talhão
+custo desta variedade será atualizado. Para tal, deverão exigir as seguintes informações básicas: valorDespesa, variedade, numerotalhao, cicloproducao.
+
+_Prioridade: Importante_
+
+
+_*RF067 – Cadastrar despesas por Talhão*_
+
 O usuário deverá cadastrar despesas especificas para um talhão. Após a efetivação, o
-sistema deverá ratear o valor do lançamento com as variedades associadas a este talhão. Para tanto,
-deverá ser rateado proporcionalmente ao tamanho de cada variedade.
-Prioridade: Importante
-AgroProdutor – Sistema de Gestão Agropecuária - 19
-Universidade Federal de Lavras – Pós-Graduação em Software Livre
-[RF68] – Cadastrar despesas por Ciclo de Produção
+sistema deverá ratear o valor do lançamento com as variedades associadas a este talhão. Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada variedade.
+
+_Prioridade: Importante_
+
+
+_*RF068 – Cadastrar despesas por Ciclo de Produção*_
+
 O usuário deverá cadastrar despesas especificas para este ciclo de produção. Após a
-efetivação, o sistema deverá ratear o valor do lançamento com os talhões associadas a este ciclo de
-produção. Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada talhão e de cada
-variedade.
-Prioridade: Importante
-[RF69] – Cadastrar despesas por Safra
+efetivação, o sistema deverá ratear o valor do lançamento com os talhões associadas a este ciclo de produção. Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada talhão e de cada variedade.
+
+_Prioridade: Importante_
+
+
+_*RF069 – Cadastrar despesas por Safra*_
+
 O usuário deverá cadastrar despesas especificas para esta safra. Após a efetivação, o
-sistema deverá ratear o valor do lançamento com os ciclos de produções associadas a esta safra.
-Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada ciclo de produção,
-consecutivamente para cada talhão e de cada variedade.
-Prioridade: Importante
-2.9 Modulo RH
+sistema deverá ratear o valor do lançamento com os ciclos de produções associadas a esta safra. Para tanto, deverá ser rateado proporcionalmente ao tamanho de cada ciclo de produção, consecutivamente para cada talhão e de cada variedade.
+
+
+_Prioridade: Importante_
+
+
+*2.9 Modulo RH*
+
+
 Através do Modulo RH, será efetuado o gerenciamento do quadro de funcionários.
-Este módulo não tem a intenção de substituir qualquer sistema de RH, e sim apenas para auxiliar no
-fechamento do saldo liquido de cada funcionário.
+Este módulo não tem a intenção de substituir qualquer sistema de RH, e sim apenas para auxiliar no fechamento do saldo liquido de cada funcionário.
+
 Para evitar acessos não autorizados, o modulo deverá receber como entrada o perfil e
-a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente
-autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+a lista de permissões do usuário autenticado. Uma vez que o usuário do sistema esteja devidamente autenticado e autorizado, o acesso a cada um dos sub-módulos do armazém é liberado.
+
+
 Neste módulo, os usuários devem ter associados o Perfil “Administrativo ou
 Operacional”.
-[RF70] – Cadastro de Salários
+
+
+_*RF070 – Cadastro de Salários*_
 O usuário deverá cadastrar um salário base para cada funcionário.
 Prioridade: Importante
 [RF71] – Pagamento de férias
