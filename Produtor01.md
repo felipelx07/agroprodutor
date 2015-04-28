@@ -1,0 +1,70 @@
+## Resultado da Pesquisa com o Produtor 01 ##
+
+**1-Nome:**
+Preservou o direito de não publicar o nome
+
+**2-Idade:**
+33 Anos
+
+**3-Quantidade de área plantada:**
+1.000 há no estado de Tocantins.
+
+**4-Tem Filhos?**
+Sim, tenho 3 filhos. A filha mais velha tem 9 anos, a filha do meio tem 3 e o caçula 4 meses.
+
+**5-Grau de estudo do(s) filho(s)?**
+A filha mais velha esta na 8º serie. os demais nao estão na idade escolar.
+
+**6-Possui computador ?**
+Sim
+
+**7-Quantos computadores?**
+1 Computador, sendo notebook
+
+**8-Quantos funcionários abastecem o sistema?**
+Não possui sistema de gestão, mas as planilhas eletronicas, eu mesmo faço e abasteço.
+
+**9-Grau de estudo do proprietário?**
+Superior Completo – Agronomia
+
+**10-Conhece Software Livre?**
+Não
+
+**11-Já usou software Livre?**
+Acho que não
+
+**12-Conhece Linux?**
+Sim, ja ouvi falar, mas nunca usei
+
+**13-Já usou Linux?**
+Não
+
+**14-Qual sistema operacional usa?**
+Windows
+
+**15-Tem um projeto de investimento em informática a curto período?**
+Não
+
+**16-Possui sistema de gestão?**
+Não. Planto pouca area, e no momento me sinto comodo com as planilhas eletronicas.
+
+**17-Esta satisfeito?**
+Não possui sistema de gestão
+
+**18-É comodato, pago, alugado:**
+Não possui sistema de gestão
+
+**19-Existe suporte?**
+Não possui sistema de gestão
+
+**20-Esta satisfeito com o suporte?**
+Não possui sistema de gestão
+
+**21-Precisou de melhorias?**
+Não possui sistema de gestão
+
+**22-O que acha de participar de um projeto de software livre?**
+Se for p desenvolver algo que realmente me ajude
+
+**23-Senão dependesse de dinheiro, o que mais, dificultaria você a participar de um projeto de Swlivre?**
+Tempo e Disponibilidade de Horário

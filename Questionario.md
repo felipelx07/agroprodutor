@@ -1,0 +1,59 @@
+Foi elaborada uma pesquisa junto aos produtores rurais, onde mostrou o cenário atual desta categoria, mostrando resultados interessantes.
+Este pesquisa foi elaborada através de um questionário, onde foram enviadas perguntas para os produtores rurais. Estas perguntas foram enviadas via email.
+Em um universo de 20 produtores escolhidos para responder a pesquisa, apenas 7 retornaram o questionário.
+
+### **Questionário** ###
+|1| – Nome:|
+|:|:---------|
+|2 | - Idade:|
+|3 | – Quantidade de área plantada:|
+|4 | - Possui Filhos:|
+|5 | - Grau de Estudos dos Filhos:|
+|6 | – Possui Computador:|
+|7 | – Quantos Computadores:|
+|8 | – Quantos Funcionários abastecem os computadores:|
+|9 | – Grau de estudo do proprietário:|
+|10| – Conhece Software Livre:|
+|11| – Já usou software livre:|
+|12| – Conhece Linux:|
+|14| – Já usou Linux:|
+|15| – Qual sistema operacional que usa:|
+|15| – Possui um projeto de investimento em informática a curto período:|
+|16| – Possui um sistema de gestão:|
+|17| – Está satisfeito:|
+|18| – Comodato, Pago, Alugado:|
+|19| – Existe suporte:|
+|20| - Está satisfeito com o suporte:|
+|21| – Precisou de melhorias:|
+|22| – O que acha de participar de um projeto de software livre:|
+|23| – Senão dependesse de dinheiro, o que mais dificultaria você a participar de um projeto de software livre:|
+
+**Por motivos obvios, os nomes dos produtores serão preservados.**
+
+
+# INTEGRA DA PESQUISA #
+
+|[Produtor01](Produtor01.md)|
+|:--------------------------|
+|[Produtor02](Produtor02.md)|
+|[Produtor03](Produtor03.md)|
+|[Produtor04](Produtor04.md)|
+|[Produtor05](Produtor05.md)|
+|[Produtor06](Produtor06.md)|
+|[Produtor07](Produtor07.md)|
+
+# RESULTADOS  E NUMEROS #
+**Escolaridade**
+Uns dos resultados relevantes foi a média de idade, associada a escolaridade dos produtores, conforme tabela abaixo.
+
+|_**Produtor**_|_**Idade**_|_**Escolaridade**_|
+|:-------------|:----------|:-----------------|
+|Produtor01|33 Anos|Superior Completo|
+|Produtor02|44 Anos|Superior Completo|
+|Produtor03|42 Anos|Superior Completo|
+|Produtor04|56 Anos|Ensino Fundamental Incompleto|
+|Produtor05|51 Anos|Ensino Médio Completo|
+|Produtor06|42 Anos|Ensino Fundamental Incompleto|
+|Produtor07|30 Anos|Superior Completo|
+
+Pode concluir que, 57,14% deste universo de produtores, tem Ensino Superior. Este dado foi surpreendente. Com uma média de 42,5 anos de idade, associada à escolaridade percebe-se que a imagem dos produtores deixou de ser aquela de senhores de idade, trabalhando com pequenas áreas e com pouco estudo.
